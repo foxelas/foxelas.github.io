@@ -23,9 +23,31 @@ body {
 ::-moz-selection {
   background: #3C3C3C ; /* Gecko Browsers */
 }
+
 section {
     display: block;
     position: absolute;
+}
+
+form {
+    width:300px;
+}
+
+input, textarea {
+	width:400px;
+	height:27px;
+	background:#FFFFFF;
+	padding:10px;
+	margin-top:30px;
+	font-family:'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 100 !important;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+}
+
+textarea {
+	height:100px;
 }
 
 #information {
@@ -35,23 +57,6 @@ section {
     height: 100%;
     background-image: none;
 	word-wrap: normal;
-}
-
-#coming {
-    left: 400px;
-    top: 400px;
-	width: 500px;
-    height: 200px;
-    background-image: none;
-}
-a {
-	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
-    font-weight: 300!important;
-	letter-spacing: -0.02px;
-	color: #FFDB58 ;
-	text-decoration: none;
-	text-transform: uppercase;
 }
 
 
@@ -81,35 +86,6 @@ h1 {
     animation-timing-function: ease-out;
     animation-duration: 0.8s;
     animation-delay: 0s;
-
-}
-
-h2 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
-    font-weight: 300!important;
-	color: #FFFFFF;
-	letter-spacing: -0.02px;
-    
-              
-    -moz-animation-name: pageLoad;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 0.8s;
-    -moz-animation-delay: 0s;
-
-    -webkit-animation-name: pageLoad;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 0.8s;
-    -webkit-animation-delay: 0s;
-
-    animation-name: pageLoad;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 0.8s;
-    animation-delay: 0s;
-
 
 }
 
@@ -221,6 +197,8 @@ ul {
     height: 81px;
     width: 180px;
     position: absolute;
+	text-indent:-9999px;
+    cursor:pointer;
           
     -moz-animation-name: pageLoadButton;
     -moz-animation-iteration-count: 1;
@@ -242,70 +220,6 @@ ul {
 }
 
 #resumeButton:hover {
-    background-position: bottom;
-}
-
-#publicationsButton {
-    margin-left: -6px;
-	display:inline-block;
-    background-image: url("publicationsButtonSprite.png");
-    background-position: top;
-    height: 81px;
-    width: 180px;
-    position: absolute;
-          
-    -moz-animation-name: pageLoadButton;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-delay: 0.0s;
-
-    -webkit-animation-name: pageLoadButton;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-delay: 0.0s;
-
-    animation-name: pageLoadButton;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 1.5s;
-    animation-delay: 0.0s;
-}
-
-#publicationsButton:hover {
-    background-position: bottom;
-}
-
-#downloadButton {
-    margin-left: 185px;
-	display:inline-block;
-    background-image: url("download.png");
-    background-position: top;
-    height: 72px;
-    width: 72px;
-    position: absolute;
-          
-    -moz-animation-name: pageLoadButton;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-delay: 0.0s;
-
-    -webkit-animation-name: pageLoadButton;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-delay: 0.0s;
-
-    animation-name: pageLoadButton;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 1.5s;
-    animation-delay: 0.0s;
-}
-
-#downloadButton:hover {
     background-position: bottom;
 }
 
@@ -376,6 +290,7 @@ ul {
 }
 
 </style>
+<script src="gen_validatorv4.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -384,36 +299,34 @@ ul {
 <div id="border">
 	<div id="frameBorder"></div>
 </div>
-
+	
 <section id="information">
-  <h2>A Greek girl based in Tokyo</h2>
-  <h1>Hi, I'm Elena</h1>
-  <hr>
-  <h3>
-	Member of Obi Laboratory @TokyoTech.
-	<br>
-	Currently, I am pursuing a PhD degree in Human
-	<br>
-	Centered Science and Biomedical Engineering.
-	<br>
-	I enjoy music, reading and exploring the great outdoors.
-	<br>
-  </h3>
-	<div align="left">
-		<a href="publications.html" id="publicationsButton"></a>
-	</div>	
-
-</section>
-  
-<section id="coming">	
-	<h2>	
-	<div align="left">
-		<a href="cv.html" id="resumeButton"></a>
-		<a href="https://github.com/foxelas/foxelas.github.io/raw/master/cv-aloupogianni-public.pdf" id="downloadButton"></a>
-	</div>	
-	</h2>
-</section>
-
+	<h1>Contact</h1>
+	<hr>	
+		<form method="post" name="contactform" action="submit.php">
+			<h3>
+			   <section>Your Name:</section>
+			   <input name="name" placeholder="Jane Doe">
+			   <section>Your Email:</section>
+			   <input name="email" type="email" placeholder="jane@doe.com">
+			   <section>Your Message:</section>
+			   <textarea name="message" placeholder="Hey!"></textarea>
+			   <section id="resumeButton" name="submit" type="submit" value="Submit">
+		   </h3> 
+		</form><script language="JavaScript" type="text/javascript"
+    xml:space="preserve">//<![CDATA[
+//You should create the validator only after the definition of the HTML form  
+  var frmvalidator  = new Validator("contactform");
+  frmvalidator.addValidation("name","req","Please provide your name"); 
+  frmvalidator.addValidation("name","maxlen=40",	"Max length for Name is 40");
+  frmvalidator.addValidation("name","alpha","Alphabetic chars only");
+  frmvalidator.addValidation("email","maxlen=50");
+  frmvalidator.addValidation("email","req","Please provide your email");
+  frmvalidator.addValidation("email","email","Please enter a valid email address");
+//]]></script>
+</section>	  
+ 
+	
 <section id="sm_links">
 	<div id= "sm_button">
 			<a href="https://www.linkedin.com/in/foxelas/">
