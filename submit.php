@@ -30,17 +30,12 @@ if( empty($errors))
 	$email_subject = "foxelas.github - Contact form submission: $name";
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
-	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
 	
 	if ($_POST['submit']) {	
-	   if (mail($to,$email_subject,$email_body,$headers)) {
-		echo '<p>Message Sent Successfully!</p>';
+	    mail($to,$email_subject,$email_body,$headers);
 		header('Location: index.html');
-	   } else {
-		echo '<p>Ah! Try again, please?</p>';
-	   }
 	}
 } 
 ?>
