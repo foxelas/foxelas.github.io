@@ -33,6 +33,7 @@ form {
     width:300px;
 }
 
+
 input, textarea {
 	width:400px;
 	height:27px;
@@ -48,6 +49,7 @@ input, textarea {
 
 textarea {
 	height:100px;
+	font-family:'Raleway', sans-serif;
 }
 
 #information {
@@ -189,17 +191,15 @@ ul {
     position: absolute;	
 }
 
-#resumeButton {
-    margin-left: -6px;
-	display:inline-block;
-    background-image: url("resumeButtonSprite.png");
-    background-position: top;
-    height: 81px;
-    width: 180px;
-    position: absolute;
-	text-indent:-9999px;
+#submit  {         
+	width:85px;
+    height:35px;
+    background:url(submit.png);
+    /* text-indent:-9999px; */
+    border:none;
+    margin-top:20px;
     cursor:pointer;
-          
+	
     -moz-animation-name: pageLoadButton;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-out;
@@ -219,7 +219,7 @@ ul {
     animation-delay: 0.0s;
 }
 
-#resumeButton:hover {
+#submit:hover {
     background-position: bottom;
 }
 
@@ -311,7 +311,7 @@ ul {
 			   <input name="email" type="email" placeholder="jane@doe.com">
 			   <section>Your Message:</section>
 			   <textarea name="message" placeholder="Hey!"></textarea>
-			   <section id="resumeButton" name="submit" type="submit" value="Submit">
+			   <input id="submit" type="submit" value="Submit">
 		   </h3> 
 		</form><script language="JavaScript" type="text/javascript"
     xml:space="preserve">//<![CDATA[
