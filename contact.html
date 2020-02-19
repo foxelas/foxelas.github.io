@@ -313,17 +313,16 @@ ul {
 			   <textarea name="message" placeholder="Hey!"></textarea>
 			   <input id="submit" type="submit" value="Submit">
 		   </h3> 
-		</form><script language="JavaScript" type="text/javascript"
-    xml:space="preserve">//<![CDATA[
-//You should create the validator only after the definition of the HTML form  
-  var frmvalidator  = new Validator("contactform");
-  frmvalidator.addValidation("name","req","Please provide your name"); 
-  frmvalidator.addValidation("name","maxlen=40",	"Max length for Name is 40");
-  frmvalidator.addValidation("name","alpha","Alphabetic chars only");
-  frmvalidator.addValidation("email","maxlen=50");
-  frmvalidator.addValidation("email","req","Please provide your email");
-  frmvalidator.addValidation("email","email","Please enter a valid email address");
-//]]></script>
+		</form>
+		<script language="JavaScript" type="text/javascript">
+		  var frmvalidator  = new Validator("contactform");
+		  frmvalidator.addValidation("name","req","Please provide your name"); 
+		  frmvalidator.addValidation("name","maxlen=40",	"Max length for Name is 40");
+		  frmvalidator.addValidation("email","maxlen=50");
+		  frmvalidator.addValidation("email","req","Please provide your email");
+		  frmvalidator.addValidation("email","email","Please enter a valid email address");
+		</script>
+
 </section>	  
  
 	
