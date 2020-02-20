@@ -1,6 +1,22 @@
 <?php 
 $errors = '';
-$myemail = 'work.jpn@outlook.com';//<-----Put Your email address here.
+$to = 'work.jpn@outlook.com'; // note the comma
+// Subject
+$subject = 'test';
+// Message
+$message = 'hey';
+
+// To send HTML mail, the Content-type header must be set
+$headers[] = 'MIME-Version: 1.0';
+$headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+// Additional headers
+$headers[] = 'From: $myemail';
+
+// Mail it
+mail($to, $subject, $message, implode("\r\n", $headers));
+
+/*$myemail = 'work.jpn@outlook.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
    empty($_POST['message']))
@@ -30,16 +46,24 @@ if( empty($errors))
 	$email_subject = "foxelas.github - Contact form submission: $name";
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
-	$headers = "From: $myemail\n"; 
-	$headers .= "Reply-To: $email_address";
+
+	
+		// To send HTML mail, the Content-type header must be set
+	$headers[] = 'MIME-Version: 1.0';
+	$headers[] = 'Content-type: text/html; charset=iso-8859-1';
+	
+	$headers[] = "From: $myemail\n"; 
+	//$headers[] = "Reply-To: $email_address";
 	
 	if ($_POST['submit']) {	
 	    mail($to,$email_subject,$email_body,$headers);
 		header('Location: index.html');
 	}
 } 
+*/
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+
+<!DOCTYPE html"> 
 <html>
 <head>
 	<title>Contact form handler</title>
