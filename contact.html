@@ -306,22 +306,28 @@ img {
 <section id="information">
 	<h1>Contact</h1>
 	<hr>	
-		<form method="POST" action="http://formspree.io/work.jpn@outlook.com" name="contactform">
+		<form method="POST" name="contactform">
 		   <div><h3>Your Name:</h3> </div>
 		   <input name="name" placeholder="Jane Doe">
 		   <div><h3>Your Email:</h3> </div>
 		   <input name="email" type="_replyto" placeholder="jane@doe.com">
+		   <input type="hidden" name="_subject" value="foxelas.github.com contact" />
 		   <div><h3>Your Message:</h3> </div>
-		   <textarea name="body" placeholder="Hey!"></textarea>
-		   <input id="submit" name="submit" type="submit" value="Send">
+		   <textarea name="message" placeholder="Hey!"></textarea>
+		   <input type="text" name="_gotcha" style="display:none" />
+		   <input type="hidden" name="_next" value="https://foxelas.github.io/index.html" />
+		   <input id="submit" name="submit" type="submit" value="Submit">
 		</form>
 		<script>
-		  var frmvalidator  = new Validator("contactform");
-		  frmvalidator.addValidation("name","req","Please provide your name"); 
-		  frmvalidator.addValidation("name","maxlen=40",	"Max length for Name is 40");
-		  frmvalidator.addValidation("email","maxlen=50");
-		  frmvalidator.addValidation("email","req","Please provide your email");
-		  frmvalidator.addValidation("email","email","Please enter a valid email address");
+			var contactform =  document.getElementById('contactform');
+			contactform.setAttribute('action', 'http://formspree.io/' + 'work.jpn' + '@' + 'outlook' + '.' + 'com');
+
+			var frmvalidator  = new Validator("contactform");
+			frmvalidator.addValidation("name","req","Please provide your name"); 
+			frmvalidator.addValidation("name","maxlen=40",	"Max length for Name is 40");
+			frmvalidator.addValidation("email","maxlen=50");
+			frmvalidator.addValidation("email","req","Please provide your email");
+			frmvalidator.addValidation("email","email","Please enter a valid email address");
 		</script>
 
 </section>	  
