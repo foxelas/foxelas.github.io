@@ -33,13 +33,12 @@ form {
     width:300px;
 }
 
-
 input, textarea {
 	width:400px;
 	height:27px;
 	background:#FFFFFF;
 	padding:10px;
-	margin-top:45px;
+	margin-top:-20px;
 	font-family:'Raleway', sans-serif;
 	font-size: 18px;
 	font-weight: 100 !important;
@@ -201,7 +200,7 @@ img {
     background:url(submit.png);
     /* text-indent:-9999px; */
     border:none;
-    margin-top:20px;
+    margin-top:10px;
     cursor:pointer;
 	
     -moz-animation-name: pageLoadButton;
@@ -308,11 +307,11 @@ img {
 	<h1>Contact</h1>
 	<hr>	
 		<form method="post" name="contactform" action="submit.php">
-		   <section><h3>Your Name:</h3> </section>
+		   <div><h3>Your Name:</h3> </div>
 		   <input name="name" placeholder="Jane Doe">
-		   <section><h3>Your Email:</h3> </section>
+		   <div><h3>Your Email:</h3> </div>
 		   <input name="email" type="email" placeholder="jane@doe.com">
-		   <section><h3>Your Message:</h3> </section>
+		   <div><h3>Your Message:</h3> </div>
 		   <textarea name="message" placeholder="Hey!"></textarea>
 		   <input id="submit" name="submit" type="submit" value="Submit">
 		</form>
