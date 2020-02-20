@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="el">
 <link rel="shortcut icon" href="l.ico" type="image/x-icon"/>
-<TITLE>Elena's CV</TITLE>
+<TITLE>Elena's Page</TITLE>
 <META name="author" content="Template Creator: Julian Praest - joolean.io">
 <META name="editedby" content="Template adjustment: Elena - foxelas.github.io">
 <META name="copyright" content="Creative Commons BY-NC 4.0">
@@ -183,7 +183,6 @@ hr {
 }
 ul {
     display: block;
-    background-color: none;
     position: fixed;
 }
 
@@ -196,7 +195,7 @@ ul {
 }
 
 #border {
-    border: 1px 3C3C3C solid;
+    border: 1px  solid 3C3C3C; 
 	left: 1px;
     top: 1px;
 	right: 1px;
@@ -214,6 +213,7 @@ ul {
 }
 
 #resumeButton {
+	align: left
     margin-left: -6px;
 	display:inline-block;
     background-image: url("resumeButtonSprite.png");
@@ -246,6 +246,7 @@ ul {
 }
 
 #publicationsButton {
+	align: left
     margin-left: -6px;
 	display:inline-block;
     background-image: url("publicationsButtonSprite.png");
@@ -309,6 +310,7 @@ ul {
     background-position: bottom;
 }
 
+img { border: 0; }
           
 @-moz-keyframes pageLoad {
     0% {
@@ -399,55 +401,50 @@ ul {
 	I enjoy music, reading and exploring the great outdoors.
 	<br>
   </h3>
-	<div align="left">
-		<a href="publications.html" id="publicationsButton"></a>
+	<div><a href="publications.html" id="publicationsButton"></a>
 	</div>	
 
 </section>
   
-<section id="coming">	
-	<h2>	
-	<div align="left">
+<section id="coming">		
+	<div>
 		<a href="cv.html" id="resumeButton"></a>
 		<a href="https://github.com/foxelas/foxelas.github.io/raw/master/cv-aloupogianni-public.pdf" id="downloadButton"></a>
 	</div>	
-	</h2>
 </section>
 
 <section id="sm_links">
-	<div id= "sm_button">
+	<div class="sm_button">
 			<a href="https://www.linkedin.com/in/foxelas/">
-			<img border="none" alt="my linkedin profile" src="in.png" width="60" height="60">
+			<img  alt="my linkedin profile" src="in.png" width="60" height="60">
 			</a>
 	</div>
-	<div id= "sm_button">
+	<div class="sm_button">
 			<a href="https://github.com/foxelas">
-			<img border="none" alt="my github profile" src="gh.png" width="60" height="60">
+			<img  alt="my github profile" src="gh.png" width="60" height="60">
 			</a>
 	</div>
-	<div id= "sm_button">
+	<div class="sm_button">
 			<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni">
-			<img border="none" alt="my researchgate profile" src="rg.png" width="60" height="60">
+			<img  alt="my researchgate profile" src="rg.png" width="60" height="60">
 			</a>
 	</div>
-	<div id= "sm_button">
+	<div class="sm_button">
 			<a href="https://belleelene.wordpress.com/">
-			<img border="none" alt="my blog in wordpress" src="wp.png" width="60" height="60">
+			<img  alt="my blog in wordpress" src="wp.png" width="60" height="60">
 			</a>
 	</div>
-	<div id= "sm_button">
+	<div class="sm_button">
 		<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener noreferrer">
-		<img border="none" alt="my ORCID iD" src="orcid.png" width="60" height="60">
+		<img alt="my ORCID iD" src="orcid.png" width="60" height="60">
 		</a>
 	</div>
-	<div id= "sm_button">
+	<div class="sm_button">
 		<a  href="https://www-obi.isl.titech.ac.jp" target="orcid.widget" rel="noopener noreferrer">
-		<img border="none" alt="Obi laboratory" src="obilab.png" width="60" height="60">
+		<img  alt="Obi laboratory" src="obilab.png" width="60" height="60">
 		</a>
 	</div>
-
 </section>
-
 
 </body>
 </html>
