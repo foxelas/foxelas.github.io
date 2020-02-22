@@ -29,7 +29,7 @@ section {
     position: absolute;
 }
 
-form {
+form {	
     width:300px;
 }
 
@@ -158,11 +158,6 @@ hr {
     left: -120px;
     top: -150px;
 }
-ul {
-    display: block;
-     /* background-color: none;   */
-    position: fixed;
-}
 
 #sm_links {
     right: 50px;
@@ -194,15 +189,22 @@ img {
 	border: 0; 
 }
 
-#submit  {         
-	width:85px;
-    height:35px;
-    background:url(submit.png);
-    /* text-indent:-9999px; */
-    border:none;
-    margin-top:10px;
-    cursor:pointer;
-	
+
+#submitButton {
+	align: left;
+    margin-left: -5px;
+	margin-top:10px;
+	display:inline-block;
+    background-image: url("submitButtonSprite.png");
+    background-position: top;
+    height: 81px;
+    width: 180px;
+    position: absolute;
+	cursor:pointer;
+	outline: 0;
+	border: 0px;
+	background-color: #008080;
+          
     -moz-animation-name: pageLoadButton;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-out;
@@ -222,7 +224,7 @@ img {
     animation-delay: 0.0s;
 }
 
-#submit:hover {
+#submitButton:hover {
     background-position: bottom;
 }
 
@@ -315,18 +317,19 @@ img {
 		   <div><h3>Your Message:</h3> </div>
 		   <textarea name="message" placeholder="Hey!"></textarea>
 		   <input type="hidden" name="_next" value="https://foxelas.github.io/index.html"/>
-		   <input id="submit" name="submit" type="submit" value="Submit">
+		   <input id="submitButton" name="submit" type="submit" value="">
 		</form>
 		<script>
-			var contactform =  document.getElementById('contactform');
-			contactform.setAttribute('action', '//formspree.io/' + 'work.jpn' + '@' + 'outlook' + '.' + 'com');
-
 			var frmvalidator  = new Validator("contactform");
 			frmvalidator.addValidation("name","req","Please provide your name"); 
-			frmvalidator.addValidation("name","maxlen=40",	"Max length for Name is 40");
+			frmvalidator.addValidation("name","maxlen=40","Max length for Name is 40");
 			frmvalidator.addValidation("email","maxlen=50");
 			frmvalidator.addValidation("email","req","Please provide your email");
 			frmvalidator.addValidation("email","email","Please enter a valid email address");
+			frmvalidator.addValidation("message","req","Empty message"); 
+			
+			var contactform =  document.getElementById('contactform');
+			contactform.setAttribute('action', '//formspree.io/' + 'work.jpn' + '@' + 'outlook' + '.' + 'com');
 		</script>
 
 </section>	  
@@ -334,32 +337,32 @@ img {
 	
 <section id="sm_links">
 	<div class="sm_button">
-			<a href="https://www.linkedin.com/in/foxelas/">
+			<a href="https://www.linkedin.com/in/foxelas/" rel="noopener">
 			<img  alt="my linkedin profile" src="in.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-			<a href="https://github.com/foxelas">
+			<a href="https://github.com/foxelas" rel="noopener">
 			<img  alt="my github profile" src="gh.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-			<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni">
+			<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni" rel="noopener">
 			<img  alt="my researchgate profile" src="rg.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-			<a href="https://belleelene.wordpress.com/">
+			<a href="https://belleelene.wordpress.com/" rel="noopener">
 			<img  alt="my blog in wordpress" src="wp.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-		<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener noreferrer">
+		<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener">
 		<img alt="my ORCID iD" src="orcid.png" width="60" height="60">
 		</a>
 	</div>
 	<div class="sm_button">
-		<a  href="https://www-obi.isl.titech.ac.jp" target="orcid.widget" rel="noopener noreferrer">
+		<a  href="https://www-obi.isl.titech.ac.jp" rel="noopener">
 		<img  alt="Obi laboratory" src="obilab.png" width="60" height="60">
 		</a>
 	</div>

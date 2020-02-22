@@ -44,6 +44,8 @@ section {
     height: 200px;
     background-image: none;
 }
+
+/******** Headers *************/
 a {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
@@ -181,10 +183,6 @@ hr {
     left: -120px;
     top: -150px;
 }
-ul {
-    display: block;
-    position: fixed;
-}
 
 #sm_links {
     right: 50px;
@@ -221,6 +219,7 @@ ul {
     height: 81px;
     width: 180px;
     position: absolute;
+	cursor:pointer;
           
     -moz-animation-name: pageLoadButton;
     -moz-animation-iteration-count: 1;
@@ -253,6 +252,7 @@ ul {
     height: 81px;
     width: 180px;
     position: absolute;
+	cursor:pointer;
           
     -moz-animation-name: pageLoadButton;
     -moz-animation-iteration-count: 1;
@@ -275,36 +275,6 @@ ul {
 
 #publicationsButton:hover {
     background-position: bottom;
-}
-
-	
-#contactButton {
-	margin-top: 50px;
-	display:inline-block;
-    background-image: url("publicationsButtonSprite.png");
-    background-position: top;
-    height: 81px;
-    width: 180px;
-    position: absolute;
-	
-          
-    -moz-animation-name: pageLoadButton;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-delay: 0.0s;
-
-    -webkit-animation-name: pageLoadButton;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-delay: 0.0s;
-
-    animation-name: pageLoadButton;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 1.5s;
-    animation-delay: 0.0s;
 }
 
 img { border: 0; }
@@ -398,45 +368,48 @@ img { border: 0; }
 	I enjoy music, reading and exploring the great outdoors.
 	<br>
   </h3>
-
 </section>
   
 <section id="coming">		
 	<div>
 		<a href="cv.html" id="resumeButton"></a>
 		<a href="publications.html" id="publicationsButton"></a>
-		<a href="contact.html" id="contactButton" value="Contact"></a>
 	</div>	
 </section>
 
 <section id="sm_links">
 	<div class="sm_button">
-			<a href="https://www.linkedin.com/in/foxelas/">
+		<a  href="contact.html" rel="noopener">
+		<img  alt="contact" src="contact.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+			<a href="https://www.linkedin.com/in/foxelas/" rel="noopener">
 			<img  alt="my linkedin profile" src="in.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-			<a href="https://github.com/foxelas">
+			<a href="https://github.com/foxelas" rel="noopener">
 			<img  alt="my github profile" src="gh.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-			<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni">
+			<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni" rel="noopener">
 			<img  alt="my researchgate profile" src="rg.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-			<a href="https://belleelene.wordpress.com/">
+			<a href="https://belleelene.wordpress.com/" rel="noopener">
 			<img  alt="my blog in wordpress" src="wp.png" width="60" height="60">
 			</a>
 	</div>
 	<div class="sm_button">
-		<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener noreferrer">
+		<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener">
 		<img alt="my ORCID iD" src="orcid.png" width="60" height="60">
 		</a>
 	</div>
 	<div class="sm_button">
-		<a  href="https://www-obi.isl.titech.ac.jp" target="orcid.widget" rel="noopener noreferrer">
+		<a  href="https://www-obi.isl.titech.ac.jp" rel="noopener">
 		<img  alt="Obi laboratory" src="obilab.png" width="60" height="60">
 		</a>
 	</div>
