@@ -7,9 +7,11 @@
 <META name="author" content="Template Creator: Julian Praest - joolean.io">
 <META name="editedby" content="Template adjustment: Elena - foxelas.github.io">
 <META name="copyright" content="Creative Commons BY-NC 4.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
 
 <style>
 @import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i|Raleway:300,300i,600,600i';
+
 body {
     background-image: linear-gradient(-34deg, #008080 7%, #008080 47%, #008080 100%);
 	border-radius: 0px;
@@ -23,164 +25,44 @@ body {
 ::-moz-selection {
   background: #3C3C3C ; /* Gecko Browsers */
 }
+
 section {
     display: block;
     position: absolute;
 }
 
 #information {
-    left: 400px;
-    top: 60px;
+    left: 25%;
+    top: 10%;
 	width: 50%;
-    height: 100%;
-    background-image: none;
+    height: 50%;
 	word-wrap: normal;
-}
-#footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: white;
-   text-align: center;
 }
 
 #coming {
-    left: 400px;
-    top: 400px;
-	width: 500px;
-    height: 200px;
+    left: 25%;
+    top: 50%;
+	width: 50%;
+    height: 10%;
     background-image: none;
+	visibility: hidden;
 }
 
-/******** Headers *************/
-a {
-	font-family: 'Raleway', sans-serif;
-	font-size: 12px;
-    font-weight: 300!important;
-	letter-spacing: -0.02px;
-	color: #FFDB58 ;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-
-h1 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
-	font-weight: 600 !important;
-	color: #FFFFFF;
-	letter-spacing: 1.9px;
-	margin-top: -20px;
+#footer {
+	left: 0;
+	bottom: 2%;
+	width: 100%;
+	text-align: center;
    
-              
-    -moz-animation-name: pageLoad;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 0.8s;
-    -moz-animation-delay: 0s;
-
-    -webkit-animation-name: pageLoad;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 0.8s;
-    -webkit-animation-delay: 0s;
-
-    animation-name: pageLoad;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 0.8s;
-    animation-delay: 0s;
-
-}
-
-h2 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
-    font-weight: 300!important;
-	color: #FFFFFF;
-	letter-spacing: -0.02px;
-    
-              
-    -moz-animation-name: pageLoad;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 0.8s;
-    -moz-animation-delay: 0s;
-
-    -webkit-animation-name: pageLoad;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 0.8s;
-    -webkit-animation-delay: 0s;
-
-    animation-name: pageLoad;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 0.8s;
-    animation-delay: 0s;
-
-
-}
-
-h3 {
-	font-family: 'Cormorant Garamond', serif;
+   	font-family: 'Cormorant Garamond', serif;
 	font-style: italic;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 100 !important;
 	color: #FFF3F1 ;
 	letter-spacing: 0.5px;
 	line-height: 26px;
-          
-              
-    -moz-animation-name: pageLoad;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 0.8s;
-    -moz-animation-delay: 0s;
-
-    -webkit-animation-name: pageLoad;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 0.8s;
-    -webkit-animation-delay: 0s;
-
-    animation-name: pageLoad;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 0.8s;
-    animation-delay: 0s;
-
 }
 
-hr {
-    background-color: white;
-    display: block;
-    margin: -25px 00px 50px ;
-    height: 3px;
-    width: 160px;
-    border: none;
-          
-             
-    -moz-animation-name: pageLoad;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 0.8s;
-    -moz-animation-delay: 0s;
-
-    -webkit-animation-name: pageLoad;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 0.8s;
-    -webkit-animation-delay: 0s;
-
-    animation-name: pageLoad;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 0.8s;
-    animation-delay: 0s;
-
-}
 #photo {
 	background-image: url("photo.png");
     background-size:contain;
@@ -192,43 +74,70 @@ hr {
     top: -150px;
 }
 
-#sm_links {
-    right: 50px;
-    top: 50px;
-}
-#sm_button {
-    margin-top: 10px;
-}
-
-#border {
-    border: 1px  solid 3C3C3C; 
-	left: 1px;
-    top: 1px;
-	right: 1px;
-	bottom: 1px;
-    position: absolute;	
-}
-
 #frameBorder {
     border: 10px white solid;
+	padding: 10px;
 	left: 10px;
     top: 10px;
 	right: 10px;
 	bottom: 10px;
-    position: absolute;	
+	position: absolute;
 }
 
-#resumeButton {
-	align: left
+#sm_links {
+    right: 5%;
+    top: 5%;
+}
+
+.sm_button {
+    margin-top: 10px;
+}
+	
+.buttonContainer {	
+    left: 25%;
+    top: 50%;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	width: 25%;
+	height: 12%;
+	margin: 0 auto;
+	transition: width .475s;
+}
+
+.buttons,
+.buttons li {
+	width: 32%;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.buttons {
+	width: 100%;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.buttons li {
+	flex-shrink: 0;
+	flex-grow: 1;
+	transition: margin .475s;
+}
+	
+.spriteButton {
+	align: left;
     margin-left: -6px;
 	display:inline-block;
-    background-image: url("resumeButtonSprite.png");
     background-position: top;
     height: 81px;
     width: 180px;
     position: absolute;
 	cursor:pointer;
           
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
     -moz-animation-name: pageLoadButton;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-out;
@@ -248,45 +157,96 @@ hr {
     animation-delay: 0.0s;
 }
 
-#resumeButton:hover {
+.spriteButton:hover {
     background-position: bottom;
 }
 
-#publicationsButton {
-    margin-left: 185px;
-	display:inline-block;
-    background-image: url("publicationsButtonSprite.png");
-    background-position: top;
-    height: 81px;
-    width: 180px;
-    position: absolute;
-	cursor:pointer;
-          
-    -moz-animation-name: pageLoadButton;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-delay: 0.0s;
-
-    -webkit-animation-name: pageLoadButton;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-delay: 0.0s;
-
-    animation-name: pageLoadButton;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 1.5s;
-    animation-delay: 0.0s;
+a {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 300!important;
+	letter-spacing: -0.02px;
+	color: #FFDB58 ;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-#publicationsButton:hover {
-    background-position: bottom;
+.bigLinks {	
+	font-size: 14px;
+}
+
+.smallLinks {	
+	font-size: 12px;
 }
 
 img { border: 0; }
-          
+
+.delayedAppearance {           
+    -moz-animation-name: pageLoad;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-delay: 0s;
+
+    -webkit-animation-name: pageLoad;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-delay: 0s;
+
+    animation-name: pageLoad;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	font-weight: 600 !important;
+	color: #FFFFFF;
+	letter-spacing: 1.9px;
+	margin-top: -20px;  
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+    font-weight: 300!important;
+	color: #FFFFFF;
+	letter-spacing: -0.02px; 
+}
+
+h3 {
+	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
+	font-size: 18px;
+	font-weight: 100 !important;
+	color: #FFF3F1 ;
+	letter-spacing: 0.5px;
+	line-height: 26px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+hr {
+    background-color: white;
+    display: block;
+    margin: -25px 00px 50px ;
+    height: 3px;
+    width: 160px;
+    border: none;        
+}
+
+#resumeButton
+{    
+	background-image: url("resumeButtonSprite.png");
+}
+
+#publicationsButton {
+    background-image: url("publicationsButtonSprite.png");
+}
+
 @-moz-keyframes pageLoad {
     0% {
         -moz-transform: translateX(-150px);
@@ -317,9 +277,7 @@ img { border: 0; }
         opacity: 100;
     }
 }
-          
-          
-          
+                 
 @-moz-keyframes pageLoadButton {
     0% {
         opacity: 0;
@@ -352,21 +310,76 @@ img { border: 0; }
     }
 }
 
+@media screen and (max-width: 812px) {
+	#information {
+		left: 10%;
+		width: 70%;
+	}
+	.buttonContainer {
+		left: 10%;
+	}
+	#footer {
+		font-size: 8px;
+	}
+	.smallLinks 
+	{
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h3 {
+		font-size: 20px;
+	}
+	.buttonContainer {
+		transform: scale(0.7);
+		height: 25%;
+		top: 60%;
+		left: 0%;
+		width: 80%;
+	}
+	.buttons li {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 812px) {
+	h3 {
+		font-size: 24px;
+	}
+	.buttonContainer {
+		height: 15%;
+		top: 50%;
+		width: 70%;
+	}
+	.buttons li {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+	h3 {
+		font-size: 24px;
+	}
+	.buttonContainer {
+		top: 30%;
+		width: 40%;
+	}
+}
+
 </style>
 </head>
 <body>
 
 <div id="photo"></div>
 
-<div id="border">
-	<div id="frameBorder"></div>
-</div>
+<div id="frameBorder"></div>
 
 <section id="information">
-  <h2>A Greek girl based in Tokyo</h2>
-  <h1>Hi, I'm Elena</h1>
-  <hr>
-  <h3>
+  <h2 class="delayedAppearance">A Greek girl based in Tokyo</h2>
+  <h1 class="delayedAppearance">Hi, I'm Elena</h1>
+  <hr class="delayedAppearance">
+  <h3 class="delayedAppearance">
 	Member of Obi Laboratory @TokyoTech.
 	<br>
 	Currently, I am pursuing a PhD degree in Human
@@ -377,12 +390,25 @@ img { border: 0; }
 	<br>
   </h3>
 </section>
-  
+
+<section class="buttonContainer" id="pageButtonContainer">
+	<ul class="buttons">
+		<li>
+			<a href="cv.html" rel="noopener"><i class="spriteButton" id="resumeButton" role="presentation"></i></a>
+		</li>  
+		<li>
+			<a href="publications.html" rel="noopener"><i class="spriteButton" id="publicationsButton" role="presentation"></i></a>
+		</li>	
+	</ul>
+</section>
+
 <section id="coming">		
 	<div>
-		<a href="cv.html" id="resumeButton"></a>
-		<a href="publications.html" id="publicationsButton"></a>
 	</div>	
+</section>
+
+<section class="delayedAppearance" id="footer">
+	<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>. Theme template by <a class="smallLinks" href="https://joolean.io" rel="noopener">Julian Praest</a>.</p>
 </section>
 
 <section id="sm_links">
@@ -421,12 +447,6 @@ img { border: 0; }
 		<img  alt="Obi laboratory" src="obilab.png" width="60" height="60">
 		</a>
 	</div>
-</section>
-
-<section id="footer">
-	<h3>
-	<p>Built and maintained by <a href="https://foxelas.github.io" rel="noopener">foxelas</a>.Theme template by <a href="https://joolean.io" rel="noopener">Julian Praest</a>.</p>
-	<h3>
 </section>
 
 </body>
