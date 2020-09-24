@@ -44,17 +44,15 @@ section {
 
 #information {
     left: 25%;
+	width: 100%;
     top: 10%;
 	width: 50%;
-    height: 50%;
+    height: 80%;
 	word-wrap: normal;
 }
 
 #coming {
-    left: 25%;
-    top: 50%;
-	width: 50%;
-    height: 10%;
+    top: 30%;
     background-image: none;
 	visibility: hidden;
 }
@@ -103,38 +101,39 @@ section {
 .sm_button {
     margin-top: 10px;
 }
-	
-.buttonContainer {	
-    left: 25%;
-    top: 50%;
-	display: flex;
-	justify-content: space-between;
+
+.buttonContainer {
 	max-width: 100%;
-	width: 25%;
-	height: 12%;
 	margin: 0 auto;
-	transition: width .475s;
-}
-
-.buttons,
-.buttons li {
-	width: 50%;
-	display: flex;
-	padding: 0;
-	margin: 0;
-}
-
-.buttons {
 	width: 100%;
-	list-style: none;
-	flex-wrap: wrap;
-}
-
-.buttons li {
-	flex-shrink: 0;
-	flex-grow: 1;
 	transition: margin .475s;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.buttons{
+	display: inline;
+}
+
+.buttons li {
+  float: left;
+
+}
+
+.buttons li a {
+  margin: 180px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom:40px;
+  display: block;
+  text-decoration: none;
+}
+
 	
 .spriteButton {
 	align: left;
@@ -326,61 +325,49 @@ hr {
 }
 
 @media screen and (max-width: 812px) {
-	#information {
-		left: 10%;
-		width: 70%;
+	h3 {
+		font-size: 26px;
 	}
-	.buttonContainer {
-		left: 10%;
+	.buttons li a {
+	  margin: 60px;
+	  margin-top: 0;
+	  margin-left: 0;
+	  margin-bottom: 40px;
+	  display: block;
+	  text-decoration: none;
 	}
-	#footer {
-		font-size: 8px;
+	
+	.spriteButton {
+		width: 68px;
 	}
-	.smallLinks 
-	{
-		font-size: 8px;
+	#resumeButton
+	{    
+		background-image: url("resumeButtonSpriteSmall.png");
 	}
+	
+	#publicationsButton {
+		background-image: url("publicationsButtonSpriteSmall.png");
+	}
+
+	#currentResearchButton {
+		background-image: url("currentResearchButtonSpriteSmall.png");
+	}
+
 }
 
 @media screen and (max-width: 480px) {
 	h3 {
 		font-size: 20px;
-	}
-	.buttonContainer {
-		transform: scale(0.7);
-		height: 25%;
-		top: 70%;
-		left: 0%;
-		width: 80%;
-	}
-	.buttons li {
-		width: 50%;
-	}
-}
-
-@media screen and (min-width: 481px) and (max-width: 812px) {
-	h3 {
-		font-size: 24px;
-	}
-	.buttonContainer {
-		height: 15%;
-		top: 70%;
-		width: 70%;
-	}
-	.buttons li {
-		width: 50%;
-	}
+	}	
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px){
 	h3 {
-		font-size: 24px;
-	}
-	.buttonContainer {
-		top: 30%;
-		width: 40%;
-	}
+		font-size: 26px;
+	}	
+
 }
+
 
 </style>
 </head>
@@ -404,26 +391,28 @@ hr {
 	I enjoy music, reading and exploring the great outdoors.
 	<br>
   </h3>
+  
+	<section id="buttonContainer">
+		<ul class="buttons">
+			<li>
+				<a href="cv.html" rel="noopener"><i class="spriteButton" id="resumeButton" role="presentation"></i></a>
+			</li>  
+			<li>
+				<a href="publications.html" rel="noopener"><i class="spriteButton" id="publicationsButton" role="presentation"></i></a>
+			</li>	
+			<li>
+				<a href="currentResearch.html" rel="noopener"><i class="spriteButton" id="currentResearchButton" role="presentation"></i></a>
+			</li>	
+		</ul>
+	</section>
+
+	<section id="coming">		
+		<div>
+		</div>	
+	</section>
 </section>
 
-<section class="buttonContainer" id="pageButtonContainer">
-	<ul class="buttons">
-		<li>
-			<a href="cv.html" rel="noopener"><i class="spriteButton" id="resumeButton" role="presentation"></i></a>
-		</li>  
-		<li>
-			<a href="publications.html" rel="noopener"><i class="spriteButton" id="publicationsButton" role="presentation"></i></a>
-		</li>	
-		<li>
-			<a href="currentResearch.html" rel="noopener"><i class="spriteButton" id="currentResearchButton" role="presentation"></i></a>
-		</li>	
-	</ul>
-</section>
 
-<section id="coming">		
-	<div>
-	</div>	
-</section>
 
 <section class="delayedAppearance" id="footer">
 	<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>. Theme template by <a class="smallLinks" href="https://joolean.io" rel="noopener">Julian Praest</a>.</p>
