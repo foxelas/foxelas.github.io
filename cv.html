@@ -1,27 +1,738 @@
-<!DOCTYPE html>
-<html lang="en" style="width:100%; height:100%;">
-<style>
-.scroll-container { max-height: 250px; overflow: auto; -webkit-overflow-scrolling: touch; }
-</style>
-<head>
-	<!-- G
-	lobal site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163418269-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-163418269-1');
-	</script>
-  
-  <link rel="shortcut icon" href="l.ico" type="image/x-icon"/>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Elena's CV</title>
+<!DOCTYPE html>
+<html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163418269-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163418269-1');
+</script>
+
+<head lang="el">
+<link rel="shortcut icon" href="l.ico" type="image/x-icon"/>
+<TITLE>Elena's CV</TITLE>
+<META name="author" content="Template Creator: Julian Praest - joolean.io">
+<META name="editedby" content="Template adjustment: Elena - foxelas.github.io">
+<META name="copyright" content="Creative Commons BY-NC 4.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+
+<style>
+@import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i|Raleway:300,300i,600,600i|Alegreya+Sans:300i';
+
+body {
+    background-image: linear-gradient(-34deg, #008080 7%, #008080 47%, #008080 100%);
+	border-radius: 0px;
+	overflow: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #3C3C3C ; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #3C3C3C ; /* Gecko Browsers */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+section {
+    display: block;
+    position: absolute;
+}
+
+.wrapper {
+    display: block;
+    position: absolute;
+	overflow-y: auto;
+	overflow-x: hidden;
+	top: 5%;
+	bottom:5%;
+	width: 85%;
+	height: 80%;
+}
+
+.row {
+  display: flex;
+}
+
+.skills {
+  flex: 20%;
+  padding-right: 5px;
+}
+
+.certifications {
+  flex: 80%;
+  padding-left: 20px;
+}
+
+.dates{
+	flex: 10%;
+}
+
+.role{
+	flex: 30%;
+	padding-left: 5px;
+	margin-top: -2px;
+}
+
+.venue{
+	flex: 60%;
+	margin-top: -12px;
+	margin-bottom: -20px;
+}
+
+.details{
+	flex: 90%;
+	margin-top: -28px;
+	padding-left: 5px;
+	margin-bottom: -15px;
+}
+
+.langrow {
+	display: flex;
+}
+
+.langrow > .details{
+	margin-top: -20px;
+}
+.langrow > .dates {
+	margin-top: -20px;
+}
+
+.langrow > .dates > h3 {
+	font-size: 15px;
+}
+
+#header {
+	background: #4d4d4d;
+	text-align: center;
+	height: 15%;
+}
+
+#information {
+
+    left: 25%;
+    top: 5%;
+	width: 70%;
+    height: 100%;
+	word-wrap: normal;
+}
+
+#footer {
+	left: 0;
+	bottom: 2%;
+	width: 100%;
+	text-align: center;
+   
+   	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
+	font-size: 12px;
+	font-weight: 100 !important;
+	color: #FFF3F1 ;
+	letter-spacing: 0.5px;
+	line-height: 26px;
+}
+
+#photo {
+	background-image: url("photo.png");
+    background-size:contain;
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	background-repeat: no-repeat;
+    left: -120px;
+    top: -150px;
+}
+
+#frameBorder {
+    border: 10px white solid;
+	left: 10px;
+    top: 10px;
+	right: 10px;
+	bottom: 10px;
+    position: absolute;	
+}
+
+#sm_links {
+    right: 5%;
+    top: 5%;
+}
+
+.sm_button {
+    margin-top: 10px;
+}
+
+a {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 300!important;
+	letter-spacing: -0.02px;
+	color: #FFDB58 ;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.smallLinks {	
+	font-size: 12px;
+}
+
+h3 > a {
+	text-transform: lowercase;
+}
+
+img { border: 0; }
+
+.delayedAppearance {           
+    -moz-animation-name: pageLoad;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-delay: 0s;
+
+    -webkit-animation-name: pageLoad;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-delay: 0s;
+
+    animation-name: pageLoad;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: 600 !important;
+	color: #FFFFFF;
+	letter-spacing: 1.9px;
+	margin-top: -20px;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+    font-weight: 300!important;
+	color: #FFFFFF;
+	letter-spacing: -0.02px;
+	margin-top: -30px;
+}
+
+h3 { /* side, main */
+  	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100!important;
+	font-size: 16px;
+	color: #FFF3F1;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+}
+
+h4 { /* subheader */
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFFFFF;
+	font-size: 24px;
+	letter-spacing: -0.02px;
+	margin-bottom: -30px;
+}
+
+h5 { /*venue*/
+  	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300!important;
+	font-size: 16px;
+	color: #B4AFC2;
+	letter-spacing: 0.5px;
+	text-align: right;
+}
+
+.skills > h3, h4 {
+	text-align: right;
+}
+
+.skills > h4
+{	
+	color: #d45d7c; /* #D61D4F; pink */
+}
+
+.certifications > h4 {
+	text-align: left;
+}
+
+.dates > h3 {
+	font-size: 12px;
+}
+
+
+hr {
+    background-color: white;
+    display: block;
+    margin: -25px 00px 50px ;
+    height: 3px;
+    width: 160px;
+    border: none;        
+}
+        
+@-moz-keyframes pageLoad {
+    0% {
+        -moz-transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: translateX(0);
+        opacity: 100;
+    }
+}
+@-webkit-keyframes pageLoad {
+    0% {
+        -webkit-transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        opacity: 100;
+    }
+}
+@keyframes pageLoad {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100;
+    }
+}
+               
+@-moz-keyframes pageLoadButton {
+    0% {
+        opacity: 0;
+    }    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+@-webkit-keyframes pageLoadButton {
+    0% {
+        opacity: 0;
+    }    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+@keyframes pageLoadButton {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@media screen and (max-width: 812px) {
+	.wrapper {
+		width: 80%;
+	}
+	#information {
+		left: 10%;
+		width: 70%;
+	}
+	.buttonContainer {
+		top: 75%;
+		left: 10%;
+		width: 80%;
+	}
+	#footer {
+		font-size: 8px;
+	}
+	.smallLinks 
+	{
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h3 {
+		font-size: 20px;
+	}
+	.buttonContainer {
+		transform: scale(0.7);
+		height: 20%;
+	}
+	.buttons li {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 812px) {
+	h3 {
+		font-size: 24px;
+	}
+	.buttonContainer {
+		height: 15%;
+	}
+	.buttons li {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+	h3 {
+		font-size: 24px;
+	}
+	.buttonContainer {
+		top: 45%;
+	}
+}
+
+</style>
 </head>
-  <body style="width:100%; height:100%; margin:0;">
-  	<object data="data/cv-aloupogianni-public.pdf" style="width:100%; height:100%;" type="application/pdf">
-		<iframe src="https://docs.google.com/viewer?url=ydata/cv-aloupogianni-public.pdf&embedded=true" style="width:100%; height:100%;" type="application/pdf"></iframe>
-	</object>
-  </body>
+<body>
+
+<div id="photo"></div>
+
+<div id="frameBorder"></div>
+
+<div class="wrapper">
+<section id="information" class="delayedAppearance">
+   <div id="header" class="delayedAppearance">
+		<h1>eleni aloupogianni</h1>
+		<h2>Information Engineer</h2>	
+  </div>
+
+  <div class="row">
+	  <div class="skills">
+		  <h4>about</h4><br>
+		  <h3>Call me Elena<br>
+		  Nationality: Greek<br>
+		  Gender: Female<br></h3>
+		  
+		  <h4>contact</h4><br>  	  
+		  <h3>Greater Tokyo Area<br>
+		  Kawasaki, Japan<br>
+		  <a class="keepLinks" href="mailto:work.jpn@outlook.com">work.jpn@outlook.com</a><br>
+		  <a class="keepLinks" href="https://foxelas.github.io">foxelas.github.io</a><br>
+		  </h3>
+		  
+		  <h4>programming</h4><br>
+		  <h3>MATLAB, Python, C#<br>
+		  R, MS SQL, VBA<br>
+		  CSS, HTML<br>
+		  Bash, Asm<br></h3>
+		  
+		  <h4>tools</h4><br>
+		  <h3>LaTeX, Git<br>
+		  KiCad, OrCad<br>
+		  Relux, Weka, Praat<br>
+		  Webots, AVR studio<br></h3>
+	  
+		  <h4>os</h4><br>
+		  <h3>Windows<br>
+		  Ubuntu Linux<br>
+		  Android, iOs<br></h3>
+		  
+		  <h4>skills</h4><br> 
+		  <h3>problem-solving<br>
+		  teamwork, organizing<br>
+		  communication<br>
+		  positive attitude<br>
+		  can handle stress<br></h3>
+		  
+		  <h4>interests</h4><br> 
+		  <h3>medical imaging<br>
+		  multi-spectral analysis<br>
+		  color analysis, signals<br>
+		  pattern recognition<br></h3>
+	  </div>
+	  
+	  <div class="certifications">
+		<h4><span style="color:#4ecfde">edu</span>cation</h4><br>	
+		<div class="row">
+			<div class="dates">
+				<h3>Since 2019</h3>
+			</div>
+			<div class="role">
+				<h3>Doctoral Course</h3>
+			</div>
+			<div class="venue">
+				<h5>Tokyo Institute of Science and Technology, Japan</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+				in Information and Communications Engineering<br>
+				Human-Centered Science and Biomedical Engineering Course<br>
+				Funded by Japanese Government (Monbukagakusho: MEXT) Scholarship<br>
+				Member of Obi laboratory<br>
+				Specialized in: Multi-Spectral Image Analysis for Medical Purposes.<br>
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates">
+				<h3>2017-2019</h3>
+			</div>
+			<div class="role">
+				<h3>M.Eng.</h3>
+			</div>
+			<div class="venue">
+				<h5>Tokyo Institute of Science and Technology, Japan</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+					in Information and Communications Engineering (GPA 4.16/4.50)<br>
+					Funded by Japanese Government (Monbukagakusho: MEXT) Scholarship<br>
+					Member of Ohyama-Obi laboratory<br>
+					Thesis “Skin Cancer Detection Using Multi-Spectral Macropathology Images”,<br>
+					under the supervision of Associate Professor Takashi Obi<br>
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates">
+				<h3>2017</h3>
+			</div>
+			<div class="role">
+				<h3>Research Student</h3>
+			</div>
+			<div class="venue">
+				<h5>Tokyo Institute of Science and Technology, Japan</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+					Intensive Japanese language course and preparation for graduate studies<br>
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates">
+				<h3>2011-2016</h3>
+			</div>
+			<div class="role">
+				<h3>5Y Joint B.Sc. &amp; M.Sc.</h3>
+			</div>
+			<div class="venue">
+				<h5>National Technical University of Athens, Greece</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+					in Electrical and Computer Engineering (Grade 8.26/10)<br>
+					Supported by Eurobank Scholarship (1000€) for top-ranking entrance score<br>
+					Specialized in: Signals, Computer Systems, Electronics, Bioengineering<br>
+					Diploma Thesis “Application of the Curvelet Transform on Ultrasound Images<br>
+					of the Carotid Artery; Curvelet-based Feature Extraction and their Physical<br>
+					Meaning”, under the supervision of Professor Konstantina Nikita<br>
+				</h3>
+			</div>
+		</div>
+
+		<h4><span style="color:#FA96AB">exp</span>erience</h4><br>
+		<div class="row">
+			<div class="dates">
+				<h3>Since 2020</h3>
+			</div>
+			<div class="role">
+				<h3> Teaching Assistant</h3>
+			</div>
+			<div class="venue">
+				<h5>Saitama Medical University, Hidaka, Japan</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+				Guidance and assistance in basic electronics experiments.<br>
+				</h3>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="dates">
+				<h3>Since 2019</h3>
+			</div>
+			<div class="role">
+				<h3> Teaching Assistant</h3>
+			</div>
+			<div class="venue">
+				<h5>Tokyo Institute of Technology, Japan</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+				Topic introduction, group-work management and progress evaluation.<br>
+				</h3>
+			</div>
+		</div>		
+				
+		<div class="row">
+			<div class="dates">
+				<h3>2019</h3>
+			</div>
+			<div class="role">
+				<h3> Research Assistant</h3>
+			</div>
+			<div class="venue">
+				<h5>Tokyo Institute of Technology, Japan</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+				Inter-university project on “Assisting skin cancer macropathological diagnosis<br>
+				using multi-spectral image” in collaboration with Saitama Medical University,<br>
+				Chiba University and Olympus Corporation.<br>
+				</h3>
+			</div>
+		</div>	
+
+		<div class="row">
+			<div class="dates">
+				<h3>Since 2017</h3>
+			</div>
+			<div class="role">
+				<h3>Developer (Part-time)</h3>
+			</div>
+			<div class="venue">
+				<h5>IDAY Yamazaki Johosekei, Chiyoda, Japan</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="dates"></div>
+			<div class="details">
+				<h3>
+				Data analysis, modelling and support of financial risk management software.<br>
+				</h3>
+			</div>
+		</div>	
+
+		<h4><span style="color:#DE82D3">pub</span>lications</h4>
+		<br><br>
+		<div class="row">
+			<div class="dates"><h3>Journal</h3></div>
+			<div class="details">
+				<h3><br>
+				Eleni Aloupogianni, Hiroyuki Suzuki, Takaya Ichimura et al, 
+				“Binary Malignancy Classification of Skin Tissue using Reflectance and Texture Features from Macropathology Multi-Spectral Images”, IIEEJ Transactions on Image Electronics and Visual Computing, Vol. 7, No. 2, Dec. 2019.<br>
+				</h3>
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="dates"><h3>More</h3></div>
+			<div class="details">
+				<h3><br>
+				Full list available on <a href="https://foxelas.github.io/publications.html">foxelas.github.io/publications.html</a>
+				</h3>
+			</div>
+		</div>	
+		
+		<h4><span style="color:#32CD51">lan</span>guages</h4>
+		<br><br>
+		<div class="langrow">
+			<div class="dates"><h3>Greek</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9679; Native</h3></div>
+		</div>
+		<div class="langrow">
+			<div class="dates"><h3>English</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9679; Full working proficiency</h3></div>
+		</div>
+		<div class="langrow">
+			<div class="dates"><h3>Japanese</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9675; JLPT N2</h3></div>
+		</div>
+		<div class="langrow">
+			<div class="dates"><h3>German</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9675; &#9675; Goethe-Zertifikat B2</h3></div>
+		</div>
+	  </div>
+  </div>
+
+	
+</section>
+</div> 
+
+<section class="delayedAppearance" id="footer">
+	<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>. Theme template by <a class="smallLinks" href="https://joolean.io" rel="noopener">Julian Praest</a>.</p>
+</section>
+
+<section id="sm_links">
+	<div class="sm_button">
+		<a href="contact.html" rel="noopener">
+		<img alt="contact" src="contact.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+		<a href="https://www.linkedin.com/in/foxelas/" rel="noopener">
+		<img alt="my linkedin profile" src="in.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+		<a href="https://github.com/foxelas" rel="noopener">
+		<img alt="my github profile" src="gh.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+		<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni" rel="noopener">
+		<img alt="my researchgate profile" src="rg.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+		<a href="https://belleelene.wordpress.com/" rel="noopener">
+		<img alt="my blog in wordpress" src="wp.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+		<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener">
+		<img alt="my ORCID iD" src="orcid.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+		<a  href="https://www-obi.isl.titech.ac.jp" rel="noopener">
+		<img alt="Obi laboratory" src="obilab.png" width="60" height="60">
+		</a>
+	</div>
+	<div class="sm_button">
+		<a href="index.html" >
+		<img alt="return" src="return_nohover.png" width="60" height="60">
+		</a>
+	</div>
+</section>
+
+
+</body>
 </html>
