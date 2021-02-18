@@ -74,61 +74,59 @@ section {
 }
 
 .skills {
-  flex: 20%;
+  flex: 25%;
   padding-right: 5px;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .certifications {
-  flex: 80%;
+  flex: 75%;
   padding-left: 20px;
 }
 
 .dates{
 	flex: 10%;
+	padding-top:5px;
 }
 
 .role{
 	flex: 30%;
 	padding-left: 5px;
-	margin-top: -2px;
 }
 
 .venue{
 	flex: 60%;
 	margin-top: -12px;
-	margin-bottom: -20px;
+}
+
+.topic{
+	flex: 10%;
+	margin-top: -42px;
 }
 
 .details{
 	flex: 90%;
-	margin-top: -28px;
+	margin-top: -42px;
 	padding-left: 5px;
-	margin-bottom: -15px;
+	margin-bottom: -10px;
 }
 
-.langrow {
-	display: flex;
+.subheader > h4 {
+	margin-bottom: 28px;
 }
 
-.langrow > .details{
-	margin-top: -20px;
-}
-.langrow > .dates {
-	margin-top: -20px;
-}
-
-.langrow > .dates > h3 {
-	font-size: 15px;
+.topic > h3{
+	font-size: 14px;
 }
 
 #header {
 	background: #4d4d4d;
 	text-align: center;
-	height: 15%;
+	height: 80px;
 }
 
 #information {
-
     left: 25%;
     top: 5%;
 	width: 70%;
@@ -146,7 +144,7 @@ section {
 	font-style: italic;
 	font-size: 12px;
 	font-weight: 100 !important;
-	color: #FFF3F1 ;
+	color: #FFF3F1;
 	letter-spacing: 0.5px;
 	line-height: 26px;
 }
@@ -178,6 +176,10 @@ section {
 
 .sm_button {
     margin-top: 10px;
+}
+
+.skills > .sm_button {
+	display: inline-block;
 }
 
 a {
@@ -263,31 +265,13 @@ h5 { /*venue*/
 	text-align: right;
 }
 
-.skills > h3, h4 {
-	text-align: right;
-}
-
 .skills > h4
 {	
 	color: #d45d7c; /* #D61D4F; pink */
 }
 
-.certifications > h4 {
-	text-align: left;
-}
-
 .dates > h3 {
 	font-size: 12px;
-}
-
-
-hr {
-    background-color: white;
-    display: block;
-    margin: -25px 00px 50px ;
-    height: 3px;
-    width: 160px;
-    border: none;        
 }
         
 @-moz-keyframes pageLoad {
@@ -361,11 +345,7 @@ hr {
 		left: 10%;
 		width: 70%;
 	}
-	.buttonContainer {
-		top: 75%;
-		left: 10%;
-		width: 80%;
-	}
+	
 	#footer {
 		font-size: 8px;
 	}
@@ -373,41 +353,86 @@ hr {
 	{
 		font-size: 8px;
 	}
+	
+	#photo {
+		opacity: 0.2;
+	}
 }
 
-@media screen and (max-width: 480px) {
-	h3 {
+@media screen and (max-width: 760px) {
+
+	h1 {
+		font-size: 24px;
+		padding-top: 5px;
+	}
+	
+	h2 {
 		font-size: 20px;
+		padding-top: 5px;
 	}
-	.buttonContainer {
-		transform: scale(0.7);
-		height: 20%;
+	
+	#header {
+		height: 60px;
 	}
-	.buttons li {
-		width: 50%;
+	
+	.row {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	.certifications > .row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.certifications > .row :nth-child(1) { order: 2; }
+	.certifications > .row  :nth-child(2) { order: 3; }
+	.certifications > .row  :nth-child(3) { order: 1; }
+	
+	
+	.dates{
+		flex: 30%;
+		margin-top: -36px;
+		padding: 5px;
+	}
+	
+	.role{
+		flex:60%;
+		padding-left: 0px;
+		margin-top: -36px;
+	}
+	
+	.venue{
+		flex:100%;
+	}
+	
+	h5 {
+		text-align: left;
+	}
+	
+	.skills {
+		text-align: left;
+		margin-left: 25px;
+	}
+	
+	.details {
+		margin-top: -28px;
+	}
+	
+	.subheader > .row {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.subheader > .topic {
+		margin-top: 28px;
+	}
+	.subheader > .details {
+		margin-top: 36px;
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 812px) {
-	h3 {
-		font-size: 24px;
-	}
-	.buttonContainer {
-		height: 15%;
-	}
-	.buttons li {
-		width: 50%;
-	}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px){
-	h3 {
-		font-size: 24px;
-	}
-	.buttonContainer {
-		top: 45%;
-	}
-}
 
 </style>
 </head>
@@ -421,7 +446,7 @@ hr {
 <section id="information" class="delayedAppearance">
    <div id="header" class="delayedAppearance">
 		<h1>eleni aloupogianni</h1>
-		<h2>Information Engineer</h2>	
+		<h2>information engineer</h2>	
   </div>
 
   <div class="row">
@@ -467,6 +492,46 @@ hr {
 		  multi-spectral analysis<br>
 		  color analysis, signals<br>
 		  pattern recognition<br></h3>
+		  
+		<h4>socials</h4><br>
+			<div class="sm_button">
+				<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni" rel="noopener">
+				<img alt="my researchgate profile" src="rg.png" width="60" height="60">
+				</a>
+			</div>
+			<div class="sm_button">
+				<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener">
+				<img alt="my ORCID iD" src="orcid.png" width="60" height="60">
+				</a>
+			</div>	
+			<div class="sm_button">
+				<a href="https://www.linkedin.com/in/foxelas/" rel="noopener">
+				<img alt="my linkedin profile" src="in.png" width="60" height="60">
+				</a>
+			</div>
+			<div class="sm_button">
+				<a href="https://github.com/foxelas" rel="noopener">
+				<img alt="my github profile" src="gh.png" width="60" height="60">
+				</a>
+			</div>
+			<div class="sm_button">
+				<a href="https://belleelene.wordpress.com/" rel="noopener">
+				<img alt="my blog in wordpress" src="wp.png" width="60" height="60">
+				</a>
+			</div>	
+			<div class="sm_button">
+				<a  href="https://www-obi.isl.titech.ac.jp" rel="noopener">
+				<img alt="Obi laboratory" src="obilab.png" width="60" height="60">
+				</a>
+			</div>		
+
+			
+		  <h4>download cv</h4><br>
+		  <div class="sm_button">
+			<a href="cv-pdf.html" rel="noopener">
+			<img alt="download elena's cv" src="download.png" width="60" height="60">
+			</a>
+		  </div>
 	  </div>
 	  
 	  <div class="certifications">
@@ -483,7 +548,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 				in Information and Communications Engineering<br>
@@ -506,7 +571,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 					in Information and Communications Engineering (GPA 4.16/4.50)<br>
@@ -529,7 +594,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 					Intensive Japanese language course and preparation for graduate studies<br>
@@ -548,7 +613,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 					in Electrical and Computer Engineering (Grade 8.26/10)<br>
@@ -574,7 +639,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 				Guidance and assistance in basic electronics experiments.<br>
@@ -594,7 +659,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 				Topic introduction, group-work management and progress evaluation.<br>
@@ -614,7 +679,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 				Inter-university project on “Assisting skin cancer macropathological diagnosis<br>
@@ -636,7 +701,7 @@ hr {
 			</div>
 		</div>
 		<div class="row">
-			<div class="dates"></div>
+			<div class="topic"></div>
 			<div class="details">
 				<h3>
 				Data analysis, modelling and support of financial risk management software.<br>
@@ -644,45 +709,41 @@ hr {
 			</div>
 		</div>	
 
-		<h4><span style="color:#DE82D3">pub</span>lications</h4>
-		<br><br>
-		<div class="row">
-			<div class="dates"><h3>Journal</h3></div>
-			<div class="details">
-				<h3><br>
-				Eleni Aloupogianni, Hiroyuki Suzuki, Takaya Ichimura et al, 
-				“Binary Malignancy Classification of Skin Tissue using Reflectance and Texture Features from Macropathology Multi-Spectral Images”, IIEEJ Transactions on Image Electronics and Visual Computing, Vol. 7, No. 2, Dec. 2019.<br>
-				</h3>
+		<div class="subheader">
+			<h4><span style="color:#DE82D3">pub</span>lications</h4>
+			<div class="row">
+				<div class="topic"><h3>Journal</h3></div>
+				<div class="details">
+					<h3>
+					Eleni Aloupogianni, Hiroyuki Suzuki, Takaya Ichimura et al, 
+					“Binary Malignancy Classification of Skin Tissue using Reflectance and Texture Features from Macropathology Multi-Spectral Images”, IIEEJ Transactions on Image Electronics and Visual Computing, Vol. 7, No. 2, Dec. 2019.
+					</h3>
+				</div>
+			</div>	
+			<br><br>
+			<div class="row">
+				<div class="topic"><h3>More</h3></div>
+				<div class="details">
+					<h3>
+					Full list available on <a href="https://foxelas.github.io/publications.html">foxelas.github.io/publications.html</a>
+					</h3>
+				</div>
 			</div>
-		</div>	
-		
-		<div class="row">
-			<div class="dates"><h3>More</h3></div>
-			<div class="details">
-				<h3><br>
-				Full list available on <a href="https://foxelas.github.io/publications.html">foxelas.github.io/publications.html</a>
-				</h3>
-			</div>
-		</div>	
-		
-		<h4><span style="color:#32CD51">lan</span>guages</h4>
-		<br><br>
-		<div class="langrow">
-			<div class="dates"><h3>Greek</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9679; Native</h3></div>
 		</div>
-		<div class="langrow">
-			<div class="dates"><h3>English</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9679; Full working proficiency</h3></div>
-		</div>
-		<div class="langrow">
-			<div class="dates"><h3>Japanese</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9675; JLPT N2</h3></div>
-		</div>
-		<div class="langrow">
-			<div class="dates"><h3>German</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9675; &#9675; Goethe-Zertifikat B2</h3></div>
+	
+		<div class="subheader">
+			<h4><span style="color:#32CD51">lan</span>guages</h4>
+			<div class="row"><div class="topic"><h3>Greek</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9679; Native</h3></div></div>
+			<br>
+			<div class="row"><div class="topic"><h3>English</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9679; Full working proficiency</h3></div></div>
+			<br>
+			<div class="row"><div class="topic"><h3>Japanese</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9679; &#9675; JLPT N2</h3></div></div>
+			<br>
+			<div class="row"><div class="topic"><h3>German</h3></div>  <div class="details"><h3>&#9679; &#9679; &#9679; &#9675; &#9675; Goethe-Zertifikat B2</h3></div></div>
 		</div>
 	  </div>
   </div>
-
-	
+  
 </section>
 </div> 
 
@@ -694,36 +755,6 @@ hr {
 	<div class="sm_button">
 		<a href="contact.html" rel="noopener">
 		<img alt="contact" src="contact.png" width="60" height="60">
-		</a>
-	</div>
-	<div class="sm_button">
-		<a href="https://www.linkedin.com/in/foxelas/" rel="noopener">
-		<img alt="my linkedin profile" src="in.png" width="60" height="60">
-		</a>
-	</div>
-	<div class="sm_button">
-		<a href="https://github.com/foxelas" rel="noopener">
-		<img alt="my github profile" src="gh.png" width="60" height="60">
-		</a>
-	</div>
-	<div class="sm_button">
-		<a href="https://www.researchgate.net/profile/Eleni_Aloupogianni" rel="noopener">
-		<img alt="my researchgate profile" src="rg.png" width="60" height="60">
-		</a>
-	</div>
-	<div class="sm_button">
-		<a href="https://belleelene.wordpress.com/" rel="noopener">
-		<img alt="my blog in wordpress" src="wp.png" width="60" height="60">
-		</a>
-	</div>
-	<div class="sm_button">
-		<a href="https://orcid.org/0000-0002-2183-312X" target="orcid.widget" rel="noopener">
-		<img alt="my ORCID iD" src="orcid.png" width="60" height="60">
-		</a>
-	</div>
-	<div class="sm_button">
-		<a  href="https://www-obi.isl.titech.ac.jp" rel="noopener">
-		<img alt="Obi laboratory" src="obilab.png" width="60" height="60">
 		</a>
 	</div>
 	<div class="sm_button">
