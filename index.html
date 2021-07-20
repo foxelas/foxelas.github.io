@@ -106,49 +106,46 @@ section {
     margin-top: 10px;
 }
 
-.buttonContainer {
-	max-width: 100%;
-	margin: 0 auto;
-	width: 100%;
-	transition: margin .475s;
+
+.btn-group .spriteButton  {
+  float: left; /* Float the buttons side by side */
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.buttons{
-	display: inline;
+.btn-group .spriteButton :not(:last-child) {
+	border-right: none; 
 }
 
-.buttons li {
-  float: left;
-
+.button_center {
+	position: relative;
+   left: 180px;
 }
 
-.buttons li a {
-  margin: 180px;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom:40px;
-  display: block;
-  text-decoration: none;
+.button_left {
+    position: relative;
+    left: 360px;
+}
+.button_right {
+    right: 0px;
 }
 
-	
 .spriteButton {
-	align: left;
-    margin-left: -6px;
-	display:inline-block;
-    background-position: top;
     height: 81px;
     width: 180px;
-    position: absolute;
+	position:absolute;
+    display: inline-block;
+	background-position: top;
 	cursor:pointer;
-          
+	margin-top: 0;
+	margin-right: 5px;
+	margin-bottom:40px;
+	
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
@@ -332,17 +329,20 @@ hr {
 	h3 {
 		font-size: 26px;
 	}
-	.buttons li a {
-	  margin: 60px;
-	  margin-top: 0;
-	  margin-left: 0;
-	  margin-bottom: 40px;
-	  display: block;
-	  text-decoration: none;
+
+	.button_center {
+		position: relative;
+	   left: 68px;
 	}
-	
+
+	.button_left {
+		position: relative;
+		left: 136px;
+	}
+
 	.spriteButton {
 		width: 68px;
+		display: inline-block;
 	}
 	#resumeButton
 	{    
@@ -446,19 +446,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
   </h3>
   
-	<section id="buttonContainer">
-		<ul class="buttons">
-			<li>
-				<a href="cv.html" rel="noopener"><i class="spriteButton" id="resumeButton" role="presentation"></i></a>
-			</li>  
-			<li>
-				<a href="publications.html" rel="noopener" onclick="dataLayer.push({'interest': 'publications'});"><i class="spriteButton" id="publicationsButton" role="presentation"></i></a>
-			</li>	
-			<li>
-				<a href="currentResearch.html" rel="noopener"><i class="spriteButton" id="currentResearchButton" role="presentation"></i></a>
-			</li>	
-		</ul>
-	</section>
+	<div class="btn-group btn-group-justified">
+		<div class="button_right"><a href="cv.html" class="spriteButton" id="resumeButton" role="presentation" rel="noopener"></a></div>
+		<div class="button_center"><a href="publications.html" class="spriteButton" id="publicationsButton" role="presentation" rel="noopener" onclick="dataLayer.push({'interest': 'publications'});"></a></div>
+		<div class="button_left"><a href="currentResearch.html" class="spriteButton" id="currentResearchButton" role="presentation"rel="noopener"></a></div>
+	</div>
 
 	<section id="coming">		
 		<div>
