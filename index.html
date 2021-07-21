@@ -50,9 +50,9 @@ section {
 }
 
 #coming {
-    top: 30%;
     background-image: none;
-	visibility: hidden;
+	/*visibility: hidden;*/
+	display: flex;
 }
 
 #footer {
@@ -106,66 +106,31 @@ section {
     margin-top: 10px;
 }
 
-
-.btn-group .spriteButton  {
-  float: left; /* Float the buttons side by side */
+sprt-btn-container {
+  align-items: left;
+  flex-flow: row;
+  display: flex;
+  justify-content: center;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
+button {
+  height: 81px;
+  width: 180px;
+  border: none;
+  background: none;
 }
 
-.btn-group .spriteButton :not(:last-child) {
+.prt-btn-container .spriteButton :not(:last-child) {
 	border-right: none; 
 }
 
-.button_center {
-	position: relative;
-   left: 180px;
-}
-
-.button_left {
-    position: relative;
-    left: 360px;
-}
-.button_right {
-    right: 0px;
-}
-
 .spriteButton {
-    height: 81px;
-    width: 180px;
-	position:absolute;
     display: inline-block;
 	background-position: top;
 	cursor:pointer;
 	margin-top: 0;
-	margin-right: 5px;
-	margin-bottom:40px;
 	
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	
-    -moz-animation-name: pageLoadButton;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-delay: 0.0s;
-
-    -webkit-animation-name: pageLoadButton;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-delay: 0.0s;
-
-    animation-name: pageLoadButton;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 1.5s;
-    animation-delay: 0.0s;
 }
 
 .spriteButton:hover {
@@ -330,20 +295,12 @@ hr {
 		font-size: 26px;
 	}
 
-	.button_center {
-		position: relative;
-	   left: 68px;
+	button {
+	  width: 68px;
+	  border: none;
+	  background: none;
 	}
-
-	.button_left {
-		position: relative;
-		left: 136px;
-	}
-
-	.spriteButton {
-		width: 68px;
-		display: inline-block;
-	}
+	
 	#resumeButton
 	{    
 		background-image: url("resumeButtonSpriteSmall.png");
@@ -446,18 +403,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
   </h3>
   
-	<div class="btn-group btn-group-justified">
-		<div class="button_right"><a href="cv.html" class="spriteButton" id="resumeButton" role="presentation" rel="noopener"></a></div>
-		<div class="button_center"><a href="publications.html" class="spriteButton" id="publicationsButton" role="presentation" rel="noopener" onclick="dataLayer.push({'interest': 'publications'});"></a></div>
-		<div class="button_left"><a href="currentResearch.html" class="spriteButton" id="currentResearchButton" role="presentation"rel="noopener"></a></div>
+	<div class="sprt-btn-container delayedAppearance">
+		<a href="cv.html" rel="noopener"><button class="spriteButton" id="resumeButton"></button></a>
+		<a href="publications.html" role="presentation" rel="noopener" onclick="dataLayer.push({'interest': 'publications'});"><button class="spriteButton" id="publicationsButton"></button></a>
+		<a href="currentResearch.html"  role="presentation"rel="noopener"><button class="spriteButton" id="currentResearchButton"></button></a>
+	</div>
+	
+	<div id="coming">		
+	<h3 class="delayedAppearance">
+	<strong>Coming up </strong><br>
+	November: Conference Presentation at <a class="smallLinks" href="https://embc.embs.org/2021/"> EMBC 2021 </a> 
+	</h3>
 	</div>
 
-	<section id="coming">		
-		<div>
-		</div>	
-	</section>
 </section>
-
 
 
 <section class="delayedAppearance" id="footer">
