@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google Tag Manager -->
+	<script type="text/javascript" src="../scripts/tag_manager.js"></script>
+	<script src="../scripts/gen_validatorv4.js"></script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<META name="author" content="Template Creator: Julian Praest - joolean.io">
+	<META name="editedby" content="Template adjustment: Elena - foxelas.github.io">
+	<META name="copyright" content="Creative Commons BY-NC 4.0">
+
+	<title>Contact foxelas</title>
+	<link rel="shortcut icon" href="../images/l.ico" type="image/x-icon" />
+	<link type="text/css" rel="stylesheet" href="../stylesheets/main.css" />
+	<link type="text/css" rel="stylesheet" href="../stylesheets/contact.css" />
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX7ZZPJ" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<div id="photo"></div>
+	
+	<div id="frameBorder"></div>
+	
+	<section id="information">
+		<h1 class="delayedAppearance">Contact</h1>
+		<hr>
+		<form class="delayedAppearance" method="POST" id="contactform">
+			<div>
+				<h3>Your Name:</h3>
+			</div>
+			<input name="name" placeholder="Jane Doe">
+			<div>
+				<h3>Your Email:</h3>
+			</div>
+			<input name="email" type="_replyto" placeholder="jane@doe.com">
+			<input type="hidden" name="_subject" value="foxelas.github.com contact" />
+			<div>
+				<h3>Your Message:</h3>
+			</div>
+			<textarea name="message" placeholder="Hey!"></textarea>
+			<input type="hidden" name="_next" value="https://foxelas.github.io/index.html" />
+			<input id="submitButton" class="spriteButton" name="submit" type="submit" value="">
+		</form>
+		<script>
+			var frmvalidator = new Validator("contactform");
+			frmvalidator.addValidation("name", "req", "Please provide your name");
+			frmvalidator.addValidation("name", "maxlen=40", "Max length for Name is 40");
+			frmvalidator.addValidation("email", "maxlen=50");
+			frmvalidator.addValidation("email", "req", "Please provide your email");
+			frmvalidator.addValidation("email", "email", "Please enter a valid email address");
+			frmvalidator.addValidation("message", "req", "Empty message");
+
+			var contactform = document.getElementById('contactform');
+			contactform.setAttribute('action', '//formspree.io/' + 'work.jpn' + '@' + 'outlook' + '.' + 'com');
+		</script>
+	
+	</section>
+	
+	<section class="delayedAppearance" id="footer">
+		<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>. Theme
+			template by <a class="smallLinks" href="https://joolean.io" rel="noopener">Julian Praest</a>.</p>
+	</section>
+	
+	
+	<section id="sm_links">
+		<a href="contact.html" role="presentation" rel="noopener">
+			<button class="sm_button" id="contact_icon"></button></a>
+	
+		<a href="https://www.linkedin.com/in/foxelas/" role="presentation" rel="noopener">
+			<button class="sm_button" id="in_icon"></button></a>
+	
+		<a href="https://github.com/foxelas" role="presentation" rel="noopener">
+			<button class="sm_button" id="gh_icon"></button></a>
+	
+		<a href="index.html" role="presentation" rel="noopener">
+			<button class="sm_button" id="return_icon"></button></a>
+	</section>
+</body>
+</html>
