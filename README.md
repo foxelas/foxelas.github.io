@@ -1,7 +1,7 @@
 # ELENA's PROFILE 
 ### My personal page with cv and conact information
 
-[![FOXELAS](https://github.com/foxelas/foxelas.github.io/raw/master/docs/images/preview.png)](https://foxelas.github.io/)
+[![FOXELAS](https://github.com/foxelas/foxelas.github.io/raw/master/images/preview.png)](https://foxelas.github.io/)
 
 
 ### Note 
