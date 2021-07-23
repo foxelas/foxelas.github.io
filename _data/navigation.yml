@@ -1,17 +1,20 @@
 # main links links
 main:
+  - title: "Home"
+    url: index.html/
+  
   - title: "Publications"
-    url: /publications.html/
+    url: publications.html/
     
   - title: "CV"
-    url: /cv.html/
+    url: cv.html/
     
   - title: "Contact"
-    url: /contact.html/
+    url: contact.html/
     
   - title: "Current Research"
-    url: /currentResearch.html/
+    url: currentResearch.html/
     
   - title: "CV in PDF"
-    url: /cv-pdf.html/
+    url: cv-pdf.html/
   
