@@ -30,3 +30,14 @@ textarea {
   background-color: #008080;
   cursor: pointer;
 }
+
+@media screen and (max-width: 812px) {
+  form {
+    width: 90%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}

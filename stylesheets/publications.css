@@ -14,21 +14,17 @@
   background: #555;
 }
 
-.wrapper {
-  display: block;
-  position: absolute;
-  overflow-y: auto;
-  overflow-x: hidden;
-  top: 5%;
-  bottom: 5%;
-  width: 85%;
-  height: 80%;
-}
-
 #pubInformation {
   left: 25%;
   top: 5%;
   width: 50%;
   height: 100%;
   word-wrap: normal;
+}
+
+@media screen and (max-width: 812px) {
+  #pubInformation {
+    width: 70%;
+    left: 5%;
+  }
 }

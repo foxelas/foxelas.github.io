@@ -189,3 +189,38 @@ h6 {
   font-weight: 300 !important;
   margin-top: 0px;
 }
+
+@media screen and (max-width: 812px) {
+  #cvContainer {
+    width: 90%;
+    left: 5%;
+  }
+
+  .headerContents > h1 {
+    font-size: 24px;
+  }
+
+  .headerContents > h2 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .skills {
+    width: 30%;
+  }
+
+  .certifications {
+    width: 40%;
+  }
+
+  .row {
+    width: 100%;
+  }
+}
