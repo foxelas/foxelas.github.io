@@ -1,6 +1,7 @@
 <IfModule mod_rewrite.c>
+DirectoryIndex index.html
+
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
-DirectoryIndex index.html
 </IfModule>
