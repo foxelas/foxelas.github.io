@@ -91,7 +91,7 @@ section {
 
 #bio {
   word-wrap: break-word;
-  width: 120%;
+  width: 100%;
 }
 
 #stats {
@@ -375,7 +375,7 @@ hr {
   }
   
   #intro, #bio, #stats {
-    width: 120%;
+    width: 100%;
   }
 
   #footer {
