@@ -84,9 +84,18 @@ section {
   top: -150px;
 }
 
-#bio {
+#intro {
   word-wrap: break-word;
   width: 70%;
+}
+
+#bio {
+  word-wrap: break-word;
+  width: 120%;
+}
+
+#stats {
+	width: 80%;
 }
 
 #frameBorder {
@@ -364,8 +373,9 @@ hr {
     left: 10%;
     width: 65%;
   }
-  #bio {
-    width: 100%;
+  
+  #intro, #bio, #stats {
+    width: 120%;
   }
 
   #footer {
