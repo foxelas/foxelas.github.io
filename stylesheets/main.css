@@ -1,16 +1,39 @@
 @import "https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i|Raleway:300,300i,600,600i|Alegreya+Sans:300i| Roboto Condensed:300, 300i";
 
 body {
-  background-image: linear-gradient(
-    -34deg,
-    #008080 7%,
-    #008080 47%,
-    #008080 100%
-  );
-  border-radius: 0px;
-  overflow: hidden;
-  text-rendering: optimizeLegibility;
+	background-image: linear-gradient(
+		34deg,
+		#34A798,
+		#229389,
+		#008081,
+		#007475,
+		#005660
+	);
+	border-radius: 0px;
+    background-size: 200% 200%;
+
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+	
 }
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
 
 ::selection {
   background: #3c3c3c; /* WebKit/Blink Browsers */
