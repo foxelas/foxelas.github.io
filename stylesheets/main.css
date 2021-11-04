@@ -10,11 +10,11 @@ body {
 		#005660
 	);
 	border-radius: 0px;
-    background-size: 200% 200%;
+  background-size: 100% 100%;
 
-    -webkit-animation: Animation 5s ease infinite;
-    -moz-animation: Animation 5s ease infinite;
-    animation: Animation 5s ease infinite;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
 }
 
 @-webkit-keyframes Animation {
@@ -399,10 +399,9 @@ hr {
 }
 
 .overlay .closebtn {
+  top: 15px;
+  right: 25px;
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
 }
 
 #mobileNav {
@@ -416,14 +415,9 @@ hr {
 
 @media screen and (max-width: 812px) {
 
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+  .overlay a {font-size: 30px}
 
-  .wrapper {
+  .wrapper{
     width: 80%;
   }
 
@@ -454,7 +448,7 @@ hr {
   }
 
   #footer {
-    font-size: 8px;
+    display: none;
   }
 
   #photo {
