@@ -10,7 +10,7 @@ body {
 		#005660
 	);
 	border-radius: 0px;
-  background-size: 100% 100%;
+  background-size: 200% 200%;
 
   -webkit-animation: Animation 5s ease infinite;
   -moz-animation: Animation 5s ease infinite;
@@ -107,12 +107,7 @@ section {
 
 #intro {
   word-wrap: break-word;
-  width: 70%;
-}
-
-#bio {
-  word-wrap: break-word;
-  width: 100%;
+  width: 80%;
 }
 
 #stats {
@@ -443,7 +438,7 @@ hr {
     width: 65%;
   }
   
-  #intro, #bio, #stats {
+  #intro, #stats {
     width: 100%;
   }
 
