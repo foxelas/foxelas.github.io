@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<!-- Google Tag Manager -->
 	<script type="text/javascript" src="scripts/tag_manager.js"></script>
+
+	<!-- Use Mobile Menu -->
+	<script src="scripts/mobile_menu.js"></script>
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=0.7">
 	<meta name="author" content="Elena - foxelas.github.io">
 	<meta name="copyright" content="Creative Commons BY-NC 4.0">
+	<title>Elena Aloupogianni (foxelas)</title>
 	<link rel="shortcut icon" href="images/l.ico" type="image/x-icon" />
 	<link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
-	
-	<title>Elena Aloupogianni</title>
-
 </head>
+
 <body>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX7ZZPJ" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	
+
 	<div id="photo"></div>
-	
+
 	<div id="frameBorder"></div>
-	
+
 	<section id="information">
+
 		<h2 class="delayedAppearance">An engineer from Greece based in Tokyo</h2>
 		<h1 class="delayedAppearance">Hi, I'm Elena</h1>
 		<hr class="delayedAppearance">
 		<h3 class="delayedAppearance">
 			<div id="intro">
 				<strong>
-					Doctoral student in Obi Laboratory, Institute of Innovative Research (<a class="keepLinks" href="https://www.iir.titech.ac.jp/">IIR</a>) at Tokyo Insitute of Technology, Japan 
+					Doctoral student in Obi Laboratory, Institute of Innovative Research (<a class="keepLinks"
+						href="https://www.iir.titech.ac.jp/">IIR</a>) at Tokyo Insitute of Technology, Japan
 				</strong>
-				(see <a class="keepLinks" href="https://foxelas.github.io/about">about</a>). My interests include computer assisted diagnosis systems and hyperspectral images in pathology. I take pleasure in exploring the great outdoors and blogging about it.
+				(see <a class="keepLinks" href="https://foxelas.github.io/about">about</a>). My interests include
+				computer assisted diagnosis systems and hyperspectral images in pathology. I take pleasure in exploring
+				the great outdoors and blogging about it.
 			</div>
 		</h3>
-	
-		<div class="sprt-btn-container delayedAppearance">
+
+
+		<div id="sprt-btn-container" class="delayedAppearance">
 			<a href="cv" rel="noopener"><button class="spriteButton" id="resumeButton"></button></a>
 			<a href="publications" role="presentation" rel="noopener"
 				onclick="dataLayer.push({'interest': 'publications'});"><button class="spriteButton"
@@ -46,31 +54,48 @@
 			<a href="_files/currentResearch.pdf" role="presentation" rel="noopener"><button class="spriteButton"
 					id="currentResearchButton"></button></a>
 		</div>
-	
+
 		<div id="coming">
 			<h3 class="delayedAppearance">
 				<strong>Coming up </strong><br>
-				30th Oct.-5th Nov. : Conference Presentation at <a class="smallLinks" href="https://embc.embs.org/2021/"> EMBC 2021</a>, Guadalajara, Mexico
+				30th Oct.-5th Nov. : Conference Presentation at <a class="smallLinks"
+					href="https://embc.embs.org/2021/"> EMBC 2021</a>, Guadalajara, Mexico
 			</h3>
 		</div>
-	
+
 	</section>
-	
-	
+
 	<section class="delayedAppearance" id="footer">
-		<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>. Theme
+		<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>.
+			Theme
 			template by <a class="smallLinks" href="https://joolean.io" rel="noopener">Julian Praest</a>.</p>
 	</section>
-	
+
 	<section id="sm_links">
+
+		<div id="mobileNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" style="font-size:60px;cursor:pointer"
+				onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="cv" rel="noopener">Resume</a>
+				<br>
+				<a href="publications" role="presentation" rel="noopener"
+					onclick="dataLayer.push({'interest': 'publications'});">Publications</a>
+				<br>
+				<a href="_files/currentResearch.pdf" role="presentation" rel="noopener">Research</a>
+			</div>
+		</div>
+		<span id="menu_icon" class="sm_button" style="cursor:pointer" onclick="openNav()"></span>
+
 		<a href="contact" role="presentation" rel="noopener">
 			<button class="sm_button" id="contact_icon"></button></a>
-		
+
 		<a href="https://www.linkedin.com/in/foxelas/" role="presentation" rel="noopener">
 			<button class="sm_button" id="in_icon"></button></a>
-		
+
 		<a href="https://github.com/foxelas" role="presentation" rel="noopener">
 			<button class="sm_button" id="gh_icon"></button></a>
 	</section>
 </body>
+
 </html>

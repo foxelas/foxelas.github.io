@@ -15,7 +15,6 @@ body {
     -webkit-animation: Animation 5s ease infinite;
     -moz-animation: Animation 5s ease infinite;
     animation: Animation 5s ease infinite;
-	
 }
 
 @-webkit-keyframes Animation {
@@ -33,7 +32,6 @@ body {
     50%{background-position:91% 100%}
     100%{background-position:10% 0%}
 }
-
 
 ::selection {
   background: #3c3c3c; /* WebKit/Blink Browsers */
@@ -146,7 +144,7 @@ section {
   background-size: 60px 60px;
 }
 
-sprt-btn-container {
+.sprt-btn-container {
   align-items: left;
   flex-flow: row;
   display: flex;
@@ -159,7 +157,7 @@ button {
   cursor: pointer;
 }
 
-.prt-btn-container .spriteButton :not(:last-child) {
+.sprt-btn-container .spriteButton :not(:last-child) {
   border-right: none;
 }
 
@@ -370,25 +368,79 @@ hr {
   }
 }
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffdb58;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#mobileNav {
+  display: none;
+}
+
+#menu_icon {
+    background-image: url("../images/hamburger.png");
+    display: none;
+}
+
 @media screen and (max-width: 812px) {
-  .spriteButton {
-    width: 68px;
-  }
 
-  #resumeButton {
-    background-image: url("../images/resumeButtonSpriteSmall.png");
-  }
-
-  #publicationsButton {
-    background-image: url("../images/publicationsButtonSpriteSmall.png");
-  }
-
-  #currentResearchButton {
-    background-image: url("../images/currentResearchButtonSpriteSmall.png");
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 
   .wrapper {
     width: 80%;
+  }
+
+  #frameBorder {
+	  display: none;
+  }
+
+  #sprt-btn-container {
+	 display: none;
+  }
+
+  #mobileNav {
+    display: block;
+  }
+
+  #menu_icon {
+    display: flex;
   }
 
   #information {
@@ -404,43 +456,8 @@ hr {
   #footer {
     font-size: 8px;
   }
-  .smallLinks {
-    font-size: 8px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
 
   #photo {
     opacity: 0.5;
-  }
-
-  hr {
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  h3 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 25px;
   }
 }

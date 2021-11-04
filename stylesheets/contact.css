@@ -27,7 +27,7 @@ textarea {
   background-image: url("../images/submitButtonSprite.png");
   outline: 0;
   border: 0px;
-  background-color: #008080;
+  background-color: transparent;
   cursor: pointer;
 }
 

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>	
+
+<head>
 	<!-- Google Tag Manager -->
 	<script type="text/javascript" src="scripts/tag_manager.js"></script>
-	
+
+	<!-- Use Mobile Menu -->
+	<script src="scripts/mobile_menu.js"></script>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=0.7">
-	<META name="author" content="Elena - foxelas.github.io">
-	<META name="copyright" content="Creative Commons BY-NC 4.0">
-	<title>About</title>
+	<meta name="author" content="Elena - foxelas.github.io">
+	<meta name="copyright" content="Creative Commons BY-NC 4.0">
+	<title>foxelas - About</title>
 	<link rel="shortcut icon" href="images/l.ico" type="image/x-icon" />
 	<link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
 
@@ -20,22 +24,26 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX7ZZPJ" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	
+
 	<div id="photo"></div>
-	
+
 	<div id="frameBorder"></div>
-	
-	<section id="information">	
+
+	<section id="information">
 		<h2 class="delayedAppearance"><br></h2>
 		<h1 class="delayedAppearance">About</h1>
 		<hr class="delayedAppearance">
 		<h3 class="delayedAppearance">
-		<div id="bio">
-			<strong>Elena Aloupogianni</strong> received her B.Sc.&M.Sc. diploma from National Technical University of Athens, Greece, in 2016. She earned a M.Eng. degree from and is currently enrolled in a Ph.D. course in the Department of Information and Communications Engineering, Tokyo Institute of Technology, Japan. She is currently enrolled in the <strong>Human Centered Science and Biomedical Engineering</strong> course and working on gross pathology image processing and multi-spectral imaging.
-		</div>
-		</h3>	
-		
-		<div class="sprt-btn-container delayedAppearance">
+			<div id="bio">
+				<strong>Elena Aloupogianni</strong> received her B.Sc.&M.Sc. diploma from National Technical University
+				of Athens, Greece, in 2016. She earned a M.Eng. degree from and is currently enrolled in a Ph.D. course
+				in the Department of Information and Communications Engineering, Tokyo Institute of Technology, Japan.
+				She is currently enrolled in the <strong>Human Centered Science and Biomedical Engineering</strong>
+				course and working on gross pathology image processing and multi-spectral imaging.
+			</div>
+		</h3>
+
+		<div id="sprt-btn-container" class="delayedAppearance">
 			<a href="cv" rel="noopener"><button class="spriteButton" id="resumeButton"></button></a>
 			<a href="publications" role="presentation" rel="noopener"
 				onclick="dataLayer.push({'interest': 'publications'});"><button class="spriteButton"
@@ -45,28 +53,47 @@
 		</div>
 		<div id="stats">
 			<a href="https://github.com/anuraghazra/github-readme-stats">
-			  <img align="center" src="https://github-readme-stats.vercel.app/api?username=foxelas&theme=vue&count_private=true&hide=issues,contribs&show_icons=true" width="	100%" />
+				<img align="center"
+					src="https://github-readme-stats.vercel.app/api?username=foxelas&theme=vue&count_private=true&hide=issues,contribs&show_icons=true"
+					width="	100%" />
 			</a>
 		</div>
 	</section>
-	
+
 	<section class="delayedAppearance" id="footer">
-		<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>. Theme
+		<p>Built and maintained by <a class="smallLinks" href="https://foxelas.github.io" rel="noopener">foxelas</a>.
+			Theme
 			template by <a class="smallLinks" href="https://joolean.io" rel="noopener">Julian Praest</a>.</p>
 	</section>
-	
+
 	<section id="sm_links">
+
+		<div id="mobileNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" style="font-size:60px;cursor:pointer"
+				onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="cv" rel="noopener">Resume</a>
+				<br>
+				<a href="publications" role="presentation" rel="noopener"
+					onclick="dataLayer.push({'interest': 'publications'});">Publications</a>
+				<br>
+				<a href="_files/currentResearch.pdf" role="presentation" rel="noopener">Research</a>
+			</div>
+		</div>
+		<span id="menu_icon" class="sm_button" style="cursor:pointer" onclick="openNav()"></span>
+
 		<a href="contact" role="presentation" rel="noopener">
 			<button class="sm_button" id="contact_icon"></button></a>
-		
+
 		<a href="https://www.linkedin.com/in/foxelas/" role="presentation" rel="noopener">
 			<button class="sm_button" id="in_icon"></button></a>
-		
+
 		<a href="https://github.com/foxelas" role="presentation" rel="noopener">
 			<button class="sm_button" id="gh_icon"></button></a>
-		
+
 		<a href="/" role="presentation" rel="noopener">
 			<button class="sm_button" id="return_icon"></button></a>
 	</section>
 </body>
+
 </html>
