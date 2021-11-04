@@ -378,7 +378,7 @@ hr {
 .overlay-content {
   position: relative;
   top: 25%;
-  width: 100%;
+  width: 50%;
   text-align: center;
   margin-top: 30px;
 }
