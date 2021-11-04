@@ -378,8 +378,8 @@ hr {
 .overlay-content {
   position: relative;
   top: 25%;
-  width: 50%;
-  text-align: center;
+  width: 70%;
+  text-align: right;
   margin-top: 30px;
 }
 
@@ -395,7 +395,7 @@ hr {
 
 .overlay .closebtn {
   top: 15px;
-  right: 50px;
+  right: 30%;
   position: absolute;
 }
 
