@@ -190,10 +190,67 @@ h6 {
   margin-top: 0px;
 }
 
+#mobileCvContainer{
+  width: 90%;
+  left: 5%;
+  display: none;
+}
+
 @media screen and (max-width: 812px) {
+  
+  #mobileCvContainer{
+    display: block;
+  }
+ 
+  #mobileCvContainer > hr {
+    margin: -15px 00px 00px;
+  }
+
+ .cell.topic {
+    flex: 25%;
+  }
+
+ .cell.details {
+    flex: 75%;
+  }
+
+  .cell.dates{
+    display: flex;
+    flex:50%;
+  }
+
+  .cell.venue{
+    display: flex;
+    flex:100%;
+  }
+  .cell.role {
+    display: flex;
+    flex:100%;
+    text-align: center;
+  }
+
+  .pinkSubheader {
+    color: #ffdb58; 
+  }
+
+  .noBottomMargin > h4 {
+    margin-bottom: 00px;
+  }
+
+  .noBottomMargin > h6 {
+    margin-bottom: 00px;
+  }
+
+  .details > h6,h4 {
+    text-align: left;
+  }
+
   #cvContainer {
-    width: 90%;
-    left: 5%;
+    display: none;
+  }
+
+  .skills, .certifications {
+    text-align: left;
   }
 
   .headerContents > h1 {
@@ -210,14 +267,6 @@ h6 {
 
   h4 {
     font-size: 14px;
-  }
-
-  .skills {
-    width: 30%;
-  }
-
-  .certifications {
-    width: 40%;
   }
 
   .row {

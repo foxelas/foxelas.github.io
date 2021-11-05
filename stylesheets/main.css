@@ -378,7 +378,7 @@ hr {
 .overlay-content {
   position: relative;
   top: 25%;
-  width: 70%;
+  width: 90%;
   text-align: right;
   margin-top: 30px;
 }
@@ -395,17 +395,20 @@ hr {
 
 .overlay .closebtn {
   top: 15px;
-  right: 30%;
+  right: 10%;
   position: absolute;
-}
-
-#mobileNav {
-  display: none;
 }
 
 #menu_icon {
     background-image: url("../images/hamburger.png");
-    display: none;
+}
+
+.hideInMobile {
+  display: flex;
+}
+
+.hideInPC {
+  display: none;
 }
 
 @media screen and (max-width: 812px) {
@@ -413,7 +416,15 @@ hr {
   .overlay a {font-size: 30px}
 
   .wrapper{
-    width: 80%;
+    width: 90%;
+  }
+
+  .hideInMobile {
+    display: none;
+  }
+
+  .hideInPC {
+    display: flex;
   }
 
   #frameBorder {
@@ -430,6 +441,14 @@ hr {
 
   #menu_icon {
     display: flex;
+  }
+
+  .overlay-content {
+    width: 70%;
+  }
+
+  .overlay .closebtn {
+    right: 30%;
   }
 
   #information {
