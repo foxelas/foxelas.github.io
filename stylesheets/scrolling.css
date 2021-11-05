@@ -23,8 +23,22 @@
 }
 
 @media screen and (max-width: 812px) {
+
+  .wrapper {
+    width: 90%;
+  }
   #scrollContainer {
     left: 5%;
     width: 90%;
+  }
+  #scrollContainer > h1 {
+    font-size: 30px;
+  }
+
+  #scrollContainer > hr {
+    width: 50px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
