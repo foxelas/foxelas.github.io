@@ -406,9 +406,8 @@ hr {
 
   .overlay a {font-size: 30px}
 
-  .wrapper{
-    width: 100%;
-    height: 100%;
+  .wrapper {
+    width: 95%;
   }
 
   .hideInMobile {
