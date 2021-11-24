@@ -31,12 +31,12 @@ body {
 
 @font-face {
   font-family: raleway;
-  src: url("../fonts/Raleway-Thin.ttf");
+  src: url("../fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
   font-family: baloo2;
-  src: url("../fonts/Baloo2-Regular.ttf");
+  src: url("../fonts/Baloo2-Bold.ttf");
 }
 
 @font-face {
@@ -112,7 +112,6 @@ section {
   width: 60%;
   height: 80%;
   word-wrap: break-word;
-  text-justify: left;
 }
 
 #coming {
@@ -245,6 +244,7 @@ h1 {
 h2 {
   font-family: "major";
   font-size: 24px;
+  font-weight: 200;
   color: #ffffff;
   letter-spacing: -1px;
 }
@@ -252,11 +252,11 @@ h2 {
 h3 {
   font-family: "raleway";
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
+  text-align: justify;
   color: #fff3f1;
   line-height: 26px;
   word-wrap: normal;
-  text-justify: left;
 }
 
 hr {
@@ -270,10 +270,6 @@ hr {
 
 #greek-text {
   font-family: "greek";
-}
-
-#bold-font {
-  font-weight: bold;
 }
 
 #resumeButton {
@@ -445,6 +441,10 @@ hr {
 }
 
 @media screen and (max-width: 812px) {
+  h3 {
+    text-align: left;
+  }
+
   .overlay a {
     font-size: 30px;
   }
