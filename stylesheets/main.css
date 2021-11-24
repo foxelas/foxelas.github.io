@@ -218,10 +218,12 @@ h2 {
 h3 {
   font-family: "Raleway", sans-serif;
   font-size: 22px;
+  font-weight: 100;
   color: #fff3f1;
   line-height: 26px;
   text-align: justify;
   text-justify: inter-word;
+  letter-spacing: -1px;
 }
 
 hr {
