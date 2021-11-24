@@ -100,7 +100,7 @@ section {
 }
 
 #stats {
-  width: 60%;
+  width: 50%;
 }
 
 #frameBorder {
@@ -167,7 +167,7 @@ a {
   color: #fff3f1;
   color: #ffdb58;
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .bigLinks {
@@ -451,7 +451,6 @@ hr {
     height: 90%;
   }
 
-  #intro,
   #stats {
     width: 100%;
   }
