@@ -1,16 +1,16 @@
-@import "https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i|Raleway:300,300i,600,600i|Alegreya+Sans:300i| Roboto Condensed:300, 300i";
+@import "https://fonts.googleapis.com/css?family=Lobster+Two&Actor&Open+Sans+Condensed:wght@300&display=swap";
 
 body {
-	background-image: linear-gradient(
-		34deg,
-		#34A798,
-		#229389,
-		#008081,
-		#007475,
-		#005660
-	);
-	border-radius: 0px;
-  background-size: 200% 200%;
+  background-image: linear-gradient(
+    34deg,
+    #34a798,
+    #229389,
+    #008081,
+    #007475,
+    #005660
+  );
+  border-radius: 0px;
+  background-size: 100% 100%;
 
   -webkit-animation: Animation 5s ease infinite;
   -moz-animation: Animation 5s ease infinite;
@@ -18,19 +18,37 @@ body {
 }
 
 @-webkit-keyframes Animation {
-    0%{background-position:10% 0%}
-    50%{background-position:91% 100%}
-    100%{background-position:10% 0%}
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
 @-moz-keyframes Animation {
-    0%{background-position:10% 0%}
-    50%{background-position:91% 100%}
-    100%{background-position:10% 0%}
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
-@keyframes Animation { 
-    0%{background-position:10% 0%}
-    50%{background-position:91% 100%}
-    100%{background-position:10% 0%}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
 
 ::selection {
@@ -59,30 +77,15 @@ section {
 #information {
   left: 25%;
   top: 10%;
-  width: 50%;
+  width: 60%;
   height: 80%;
-  word-wrap: normal;
+  word-wrap: break-word;
 }
 
 #coming {
   background-image: none;
   /*visibility: hidden;*/
   display: flex;
-}
-
-#footer {
-  left: 0;
-  bottom: 2%;
-  width: 100%;
-  text-align: center;
-
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  font-size: 12px;
-  font-weight: 100 !important;
-  color: #fff3f1;
-  letter-spacing: 0.5px;
-  line-height: 26px;
 }
 
 #photo {
@@ -96,13 +99,8 @@ section {
   top: -150px;
 }
 
-#intro {
-  word-wrap: break-word;
-  width: 80%;
-}
-
 #stats {
-	width: 60%;
+  width: 60%;
 }
 
 #frameBorder {
@@ -163,9 +161,8 @@ button {
 }
 
 a {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300 !important;
-  letter-spacing: -0.02px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
   color: #ffdb58;
   text-decoration: none;
   text-transform: uppercase;
@@ -204,27 +201,25 @@ img {
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lobster Two", cursive;
   font-size: 50px;
-  font-weight: 600 !important;
+  font-weight: 200;
   color: #ffffff;
   letter-spacing: 1.9px;
-  margin-top: -20px;
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Actor", sans-serif;
   font-size: 24px;
-  font-weight: 300 !important;
+  font-weight: 100;
   color: #ffffff;
-  letter-spacing: -0.02px;
+  letter-spacing: -0.02p;
 }
 
 h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  font-size: 18px;
-  font-weight: 100 !important;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
   color: #fff3f1;
   letter-spacing: 0.5px;
   line-height: 26px;
@@ -235,7 +230,7 @@ h3 {
 hr {
   background-color: white;
   display: block;
-  margin: -25px 00px 50px;
+  margin: -40px 00px 50px;
   height: 3px;
   width: 160px;
   border: none;
@@ -361,7 +356,7 @@ hr {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -380,7 +375,8 @@ hr {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #ffdb58;
 }
 
@@ -391,7 +387,7 @@ hr {
 }
 
 #menu_icon {
-    background-image: url("../images/hamburger.png");
+  background-image: url("../images/hamburger.png");
 }
 
 .hideInMobile {
@@ -403,8 +399,9 @@ hr {
 }
 
 @media screen and (max-width: 812px) {
-
-  .overlay a {font-size: 30px}
+  .overlay a {
+    font-size: 30px;
+  }
 
   .hideInMobile {
     display: none;
@@ -415,11 +412,11 @@ hr {
   }
 
   #frameBorder {
-	  display: none;
+    display: none;
   }
 
   #sprt-btn-container {
-	 display: none;
+    display: none;
   }
 
   #mobileNav {
@@ -441,10 +438,12 @@ hr {
   #information {
     top: 5%;
     left: 10%;
-    width: 65%;
+    width: 80%;
+    height: 90%;
   }
-  
-  #intro, #stats {
+
+  #intro,
+  #stats {
     width: 100%;
   }
 
@@ -453,6 +452,6 @@ hr {
   }
 
   #photo {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }

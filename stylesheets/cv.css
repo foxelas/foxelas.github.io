@@ -3,7 +3,8 @@
   height: 80px;
   display: absolute;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 0px 0px 0px 0px;
+  text-align: center;
 }
 
 #cvContainer {
@@ -15,18 +16,14 @@
   flex-direction: column;
 }
 
-.headerContents {
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.headerContents > h1 {
+#header > h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 40px;
 }
 
-.headerContents > h2 {
-  margin-top: 25px;
+#header > h2 {
+  margin-top: 0px;
 }
 
 .skills {
@@ -107,13 +104,11 @@ h4 > a {
 
 h4 {
   /* side, main */
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 100 !important;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 16px;
   color: #fff3f1;
   letter-spacing: 0.5px;
   line-height: 20px;
-  font-weight: 300 !important;
   margin-top: 0px;
 }
 
@@ -150,7 +145,7 @@ h4 {
 
 h5 {
   /* subheader */
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 24px;
   letter-spacing: -0.02px;
 }
@@ -164,57 +159,54 @@ h5 {
 
 h6 {
   /*venue*/
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300 !important;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 16px;
   color: #b4afc2;
   letter-spacing: 0.5px;
   text-align: right;
-  font-weight: 300 !important;
   margin-top: 0px;
 }
 
-#mobileCvContainer{
+#mobileCvContainer {
   width: 90%;
   left: 5%;
   display: none;
 }
 
 @media screen and (max-width: 812px) {
-  
-  #mobileCvContainer{
+  #mobileCvContainer {
     display: block;
   }
- 
+
   #mobileCvContainer > hr {
     margin: -15px 00px 00px;
   }
 
- .cell.topic {
+  .cell.topic {
     flex: 25%;
   }
 
- .cell.details {
+  .cell.details {
     flex: 75%;
   }
 
-  .cell.dates{
+  .cell.dates {
     display: flex;
-    flex:50%;
+    flex: 50%;
   }
 
-  .cell.venue{
+  .cell.venue {
     display: flex;
-    flex:100%;
+    flex: 100%;
   }
   .cell.role {
     display: flex;
-    flex:100%;
+    flex: 100%;
     text-align: center;
   }
 
   .pinkSubheader {
-    color: #ffdb58; 
+    color: #ffdb58;
   }
 
   .noBottomMargin > h4 {
@@ -225,7 +217,8 @@ h6 {
     margin-bottom: 00px;
   }
 
-  .details > h6,h4 {
+  .details > h6,
+  h4 {
     text-align: left;
   }
 
@@ -233,15 +226,17 @@ h6 {
     display: none;
   }
 
-  .skills, .certifications {
+  .skills,
+  .certifications {
     text-align: left;
   }
 
-  .headerContents > h1 {
+  #header > h1 {
+    font-family: "Lobster Two", cursive;
     font-size: 24px;
   }
 
-  .headerContents > h2 {
+  #header > h2 {
     font-size: 22px;
   }
 
@@ -255,5 +250,9 @@ h6 {
 
   .row {
     width: 100%;
+  }
+
+  a {
+    font-size: 14px;
   }
 }
