@@ -45,7 +45,7 @@ body {
 }
 
 @font-face {
-  font-family: greek;
+  font-family: didact;
   src: url("../fonts/DidactGothic-Regular.ttf");
 }
 
@@ -269,7 +269,9 @@ hr {
 }
 
 #greek-text {
-  font-family: "greek";
+  font-family: "didact";
+  font-weight: 200;
+  font-size: 22px;
 }
 
 #resumeButton {
