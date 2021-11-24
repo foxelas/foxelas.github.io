@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Lobster+Two|Comfortaa:wght@300|Raleway:wght@200";
+/*@import "https://fonts.googleapis.com/css?family=Lobster+Two|Comfortaa:wght@300|Raleway:wght@200";*/
 
 body {
   background-image: linear-gradient(
@@ -14,7 +14,23 @@ body {
 
   -webkit-animation: Animation 5s ease infinite;
   -moz-animation: Animation 5s ease infinite;
-  animation: Animation 5s ease infinite;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: lobster;
+  src: url("../fonts/LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-Thin.ttf");
+}
+
+@font-face {
+  font-family: baloo2;
+  src: url("../fonts/Baloo2-Regular.ttf");
 }
 
 @-webkit-keyframes Animation {
@@ -161,9 +177,8 @@ button {
 }
 
 a {
-  font-family: "Raleway", sans-serif;
+  font-family: "raleway";
   font-size: 22px;
-  font-weight: 200;
   color: #fff3f1;
   color: #ffdb58;
   text-decoration: none;
@@ -203,7 +218,7 @@ img {
 }
 
 h1 {
-  font-family: "Lobster Two", cursive;
+  font-family: "lobster";
   font-size: 50px;
   font-weight: 200;
   color: #ffffff;
@@ -211,21 +226,19 @@ h1 {
 }
 
 h2 {
-  font-family: "Comfortaa", cursive;
+  font-family: "baloo2";
   font-size: 24px;
   color: #ffffff;
-  letter-spacing: -0.02p;
 }
 
 h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "raleway";
   font-size: 22px;
-  font-weight: 200;
   color: #fff3f1;
   line-height: 26px;
   text-align: justify;
   text-justify: inter-word;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 hr {
