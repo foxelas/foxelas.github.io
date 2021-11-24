@@ -437,11 +437,11 @@ hr {
   }
 
   .overlay-content {
-    width: 70%;
+    width: 90%;
   }
 
   .overlay .closebtn {
-    right: 30%;
+    right: 10%;
   }
 
   #information {
