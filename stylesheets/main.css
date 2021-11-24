@@ -29,8 +29,24 @@ body {
 }
 
 @font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: baloo2;
   src: url("../fonts/Baloo2-Regular.ttf");
+}
+
+@font-face {
+  font-family: major;
+  src: url("../fonts/MajorMonoDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: greek;
+  src: url("../fonts/DidactGothic-Regular.ttf");
 }
 
 @-webkit-keyframes Animation {
@@ -226,9 +242,10 @@ h1 {
 }
 
 h2 {
-  font-family: "baloo2";
+  font-family: "major";
   font-size: 24px;
   color: #ffffff;
+  letter-spacing: -1px;
 }
 
 h3 {
@@ -236,7 +253,7 @@ h3 {
   font-size: 22px;
   color: #fff3f1;
   line-height: 26px;
-  text-align: justify;
+  text-align: right;
   /*text-justify: inter-word;*/
   /*letter-spacing: -0.5px;*/
   word-wrap: normal;
@@ -249,6 +266,10 @@ hr {
   height: 3px;
   width: 160px;
   border: none;
+}
+
+#greek-text {
+  font-family: "greek";
 }
 
 #resumeButton {
