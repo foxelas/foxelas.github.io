@@ -23,11 +23,11 @@ body {
   src: url("../fonts/LobsterTwo-Regular.ttf");
 }
 
-/*@font-face {
+@font-face {
   font-family: raleway;
   src: url("../fonts/Raleway-Bold.ttf");
   font-weight: bold;
-}*/
+}
 
 @font-face {
   font-family: raleway;
@@ -252,6 +252,7 @@ h2 {
 h3 {
   font-family: "raleway";
   font-size: 22px;
+  font-weight: 300;
   color: #fff3f1;
   line-height: 26px;
   word-wrap: normal;
@@ -269,6 +270,10 @@ hr {
 
 #greek-text {
   font-family: "greek";
+}
+
+#bold-font {
+  font-weight: bold;
 }
 
 #resumeButton {
