@@ -255,6 +255,7 @@ h3 {
   color: #fff3f1;
   line-height: 26px;
   word-wrap: normal;
+  text-justify: left;
 }
 
 hr {
