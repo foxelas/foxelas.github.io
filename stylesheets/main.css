@@ -238,7 +238,7 @@ h3 {
   line-height: 26px;
   text-align: justify;
   /*text-justify: inter-word;*/
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px;*/
   word-wrap: break-word;
 }
 
