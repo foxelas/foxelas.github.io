@@ -237,8 +237,9 @@ h3 {
   color: #fff3f1;
   line-height: 26px;
   text-align: justify;
-  text-justify: inter-word;
+  /*text-justify: inter-word;*/
   letter-spacing: -0.5px;
+  word-wrap: break-word;
 }
 
 hr {
