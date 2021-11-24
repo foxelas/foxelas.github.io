@@ -416,6 +416,8 @@ hr {
 
   .hideInPC {
     display: flex;
+    height: 60px;
+    width: 60px;
   }
 
   #frameBorder {
