@@ -248,6 +248,10 @@ hr {
   background-image: url("../images/currentResearchButtonSprite.png");
 }
 
+#l_icon {
+  background-image: url("../images/l.png");
+}
+
 #rg_icon {
   background-image: url("../images/rg.png");
 }
@@ -445,10 +449,6 @@ hr {
   #intro,
   #stats {
     width: 100%;
-  }
-
-  #footer {
-    display: none;
   }
 
   #photo {
