@@ -112,6 +112,7 @@ section {
   width: 60%;
   height: 80%;
   word-wrap: break-word;
+  text-justify: left;
 }
 
 #coming {
@@ -253,8 +254,6 @@ h3 {
   font-size: 22px;
   color: #fff3f1;
   line-height: 26px;
-  /*text-justify: inter-word;*/
-  /*letter-spacing: -0.5px;*/
   word-wrap: normal;
 }
 
