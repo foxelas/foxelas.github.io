@@ -458,5 +458,8 @@ hr {
 
   #photo {
     opacity: 0.8;
+    width: 100%;
+    left: -20%;
+    top: -20%;
   }
 }
