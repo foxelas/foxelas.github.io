@@ -400,6 +400,8 @@ hr {
 
 .hideInPC {
   display: none;
+  height: 0px;
+  width: 0px;
 }
 
 @media screen and (max-width: 812px) {
