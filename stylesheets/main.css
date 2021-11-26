@@ -465,8 +465,13 @@ hr {
 
   .hideInPC {
     display: flex;
-    /*height: 60px;*/
-    /*width: 60px;*/
+  }
+
+  .square60 {
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
   }
 
   #frameBorder {
