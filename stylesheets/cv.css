@@ -225,6 +225,7 @@ h5 {
 
   .certContents {
     display: none;
+    width: 100%;
   }
 
   .skills {
