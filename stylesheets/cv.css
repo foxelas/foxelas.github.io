@@ -71,6 +71,7 @@
   margin-bottom: -20px;
   height: auto;
   min-height: 20px;
+  width: 100%;
 }
 
 .certRow > .dates {
@@ -198,8 +199,8 @@ h5 {
 }
 
 .stats {
-  width: 50%;
-  margin-top: 10px;
+  width: 60%;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 812px) {
@@ -252,6 +253,7 @@ h5 {
 
   .stats {
     width: 100%;
+    margin-top: 10px;
   }
   /* .bio.justified {
     text-align: left;
