@@ -197,13 +197,9 @@ h5 {
   margin-bottom: -20px;
 }
 
-h6 {
-  /*venue*/
-  font-family: "raleway";
-  font-size: 16px;
-  color: #b4afc2;
-  letter-spacing: 0.5px;
-  text-align: right;
+.stats {
+  width: 50%;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 812px) {
@@ -254,6 +250,9 @@ h6 {
     margin-bottom: 0px;
   }
 
+  .stats {
+    width: 100%;
+  }
   /* .bio.justified {
     text-align: left;
   } */

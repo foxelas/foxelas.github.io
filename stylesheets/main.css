@@ -131,10 +131,6 @@ section {
   top: -150px;
 }
 
-#stats {
-  width: 50%;
-}
-
 #frameBorder {
   border: 10px white solid;
   left: 10px;
@@ -503,10 +499,6 @@ hr {
     left: 10%;
     width: 80%;
     height: 90%;
-  }
-
-  #stats {
-    width: 100%;
   }
 
   #photo {
