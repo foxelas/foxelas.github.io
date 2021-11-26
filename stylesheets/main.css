@@ -156,13 +156,6 @@ section {
   background-size: 60px 60px;
 }
 
-.sprt-btn-container {
-  align-items: left;
-  flex-flow: row;
-  display: flex;
-  justify-content: center;
-}
-
 button {
   border: none;
   background: none;
@@ -195,14 +188,6 @@ a {
   color: #ffdb58;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.bigLinks {
-  font-size: 14px;
-}
-
-.smallLinks {
-  font-size: 12px;
 }
 
 img {
@@ -268,18 +253,6 @@ hr {
   font-family: "didact";
   font-weight: 200;
   font-size: 22px;
-}
-
-#resumeButton {
-  background-image: url("../images/resumeButtonSprite.png");
-}
-
-#publicationsButton {
-  background-image: url("../images/publicationsButtonSprite.png");
-}
-
-#currentResearchButton {
-  background-image: url("../images/currentResearchButtonSprite.png");
 }
 
 #l_icon {
@@ -471,10 +444,6 @@ hr {
   }
 
   #frameBorder {
-    display: none;
-  }
-
-  #sprt-btn-container {
     display: none;
   }
 
