@@ -1,7 +1,7 @@
 document.addEventListener(
   "DOMContentLoaded",
   function () {
-    $(".certItem div.certContents").hide();
+    // $(".certItem div.certContents").hide();
 
     $(".certItem button").click(function (e) {
       e.preventDefault();
