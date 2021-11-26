@@ -326,6 +326,14 @@ hr {
   background-image: url("../images/obilab.png");
 }
 
+#cv_icon {
+  background-image: url("../images/cv.png");
+}
+
+#pub_icon {
+  background-image: url("../images/pub.png");
+}
+
 @-moz-keyframes pageLoad {
   0% {
     -moz-transform: translateX(-150px);
@@ -457,8 +465,8 @@ hr {
 
   .hideInPC {
     display: flex;
-    height: 60px;
-    width: 60px;
+    /*height: 60px;*/
+    /*width: 60px;*/
   }
 
   #frameBorder {
@@ -470,7 +478,7 @@ hr {
   }
 
   #mobileNav {
-    display: block;
+    display: none;
   }
 
   #menu_icon {

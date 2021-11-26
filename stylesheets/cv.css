@@ -1,14 +1,6 @@
-#header {
-  background: #4d4d4d;
-  height: 80px;
-  display: absolute;
-  width: 100%;
-  margin-top: 0px 0px 0px 0px;
-  text-align: center;
-}
-
 #cvContainer {
   left: 25%;
+  top: 0%;
   width: 70%;
   height: 100%;
   word-wrap: normal;
@@ -16,40 +8,115 @@
   flex-direction: column;
 }
 
-#header > h1 {
+.header {
+  background: #4d4d4d;
+  height: 80px;
+  display: absolute;
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.header > h1 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 40px;
 }
 
-#header > h2 {
+.header > h2 {
   margin-top: 0px;
-}
-
-.skills {
-  flex: 25%;
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.certifications {
-  flex: 75%;
-}
-
-.sectionTitle {
-  height: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .row {
   display: flex;
+  align-items: flex-start;
+  margin-top: 0px;
+  vertical-align: top;
+}
+
+.skills {
+  flex: 25%;
+  text-align: right;
+  margin-right: 10px;
+  /*
+  display: block;
+  */
+}
+
+.certifications {
+  flex: 70%;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.cell {
+  height: auto;
+  margin: 0px 0px 0px 0px;
 }
 
 .certRow {
   display: flex;
+  align-items: flex-start;
+  margin-top: 0px;
+  margin-bottom: -20px;
+  height: auto;
   min-height: 20px;
-  height: 100%;
+}
+
+.certRow > .dates {
+  flex: 15%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.certRow > .venue {
+  flex: 55%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  letter-spacing: 0.5px;
+  text-align: right;
+  height: auto;
+}
+
+.certRow > .role {
+  flex: 30%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.certRow > .topic {
+  flex: 15%;
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+
+.certRow > .details {
+  flex: 85%;
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+
+.certRow > .singleDescription {
+  flex: 15%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.certRow > .singleType {
+  flex: 85%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sectionTitle {
+  height: auto;
+  margin: 0px 0px 0px 0px;
 }
 
 .cell.smButtonContainer {
@@ -65,83 +132,46 @@
   width: 60px;
 }
 
-.cell.dates {
-  flex: 10%;
-  height: 100%;
+.bio {
+  height: auto;
+  margin-top: 10px;
 }
 
-.cell.venue {
-  flex: 60%;
-  height: 100%;
-}
-
-.cell.role {
-  flex: 30%;
-  height: 100%;
-}
-
-.cell.topic {
-  flex: 10%;
-}
-
-.cell.details {
-  flex: 90%;
-}
-
-.cell {
-  flex: 100%;
-  /*border: 1px solid red;*/
-}
-
-.row .cell {
-  padding: 5px;
-  /*box-sizing: border-box;*/
-}
-
-h4 > a {
-  text-transform: lowercase;
-  font-size: 14px;
+.break {
+  height: 20px;
 }
 
 h4 {
-  /* side, main */
   font-family: "raleway";
   font-size: 16px;
-  color: #fff3f1;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-  margin-top: 0px;
+  letter-spacing: -0.02px;
+  font-weight: 300;
+  color: #ffffff;
 }
 
-.skills > h4 {
-  text-align: right;
-}
-.certifications > h4 {
-  text-align: left;
-}
-
-.details > h4 {
-  margin-top: 0px;
-}
-
-.noBottomMargin > h4 {
-  margin-bottom: -10px;
-}
-
-.noBottomMargin > h6 {
-  margin-bottom: -5px;
-}
-
-.withBottomMargin > h4 {
-  margin-bottom: 5px;
+.venue > h4 {
+  color: #b4afc2;
+  font-weight: 700;
 }
 
 .dates > h4 {
-  font-size: 14px;
+  font-weight: 700;
 }
 
-.topic > h4 {
-  font-size: 14px;
+.role > h4 {
+  font-weight: 700;
+}
+
+.singleDescription > h4 {
+  font-weight: 700;
+}
+
+h4 > a {
+  font-size: 16px;
+}
+
+a {
+  text-transform: lowercase;
 }
 
 h5 {
@@ -152,10 +182,13 @@ h5 {
 }
 
 .pinkSubheader {
-  color: #d45d7c; /* #D61D4F; pink */
+  color: #e4859f; /* #D61D4F; pink */
+  height: 24px;
+  margin-bottom: -20px;
 }
 .whiteSubheader {
   color: #ffffff;
+  margin-bottom: -20px;
 }
 
 h6 {
@@ -165,94 +198,53 @@ h6 {
   color: #b4afc2;
   letter-spacing: 0.5px;
   text-align: right;
-  margin-top: 0px;
-}
-
-#mobileCvContainer {
-  width: 90%;
-  left: 5%;
-  display: none;
 }
 
 @media screen and (max-width: 812px) {
-  #mobileCvContainer {
-    display: block;
-  }
-
-  .cell.topic {
-    flex: 25%;
-  }
-
-  .cell.details {
-    flex: 75%;
-  }
-
-  .cell.dates {
-    display: flex;
-    flex: 50%;
-  }
-
-  .cell.venue {
-    display: flex;
-    flex: 100%;
-  }
-  .cell.role {
-    display: flex;
-    flex: 100%;
-    text-align: center;
-  }
-
-  .pinkSubheader {
-    color: #ffdb58;
-  }
-
-  .noBottomMargin > h4 {
-    margin-bottom: 00px;
-  }
-
-  .noBottomMargin > h6 {
-    margin-bottom: 00px;
-  }
-
-  .details > h6,
-  h4 {
-    text-align: left;
-  }
-
   #cvContainer {
+    left: 5%;
+    width: 90%;
+  }
+
+  .toggleButton {
+    width: 100px;
+    height: 20px;
+    margin: 0px 0px 0px -5px;
+  }
+
+  .header {
+    background: none;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills {
     display: none;
   }
 
-  .skills,
-  .certifications {
+  .certRow > .topic {
+    flex: 0;
+    display: none;
+  }
+  .certRow > .details {
+    flex: 100%;
+  }
+
+  .certRow > .singleDescription {
+    flex: 25%;
+    margin-top: -10px;
+    margin-bottom: 0px;
+  }
+
+  .certRow > .singleType {
+    flex: 75%;
+    margin-top: -10px;
+    margin-bottom: 0px;
+  }
+
+  /* .bio.justified {
     text-align: left;
-  }
-
-  h1 {
-    font-size: 28px;
-    margin-bottom: 0px;
-  }
-
-  h2 {
-    font-size: 22px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  .row {
-    width: 100%;
-  }
-
-  a {
-    text-transform: lowercase;
-    font-size: 14px;
-  }
+  } */
 }
