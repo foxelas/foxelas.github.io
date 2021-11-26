@@ -58,6 +58,12 @@
   margin: 0px 0px 0px 0px;
 }
 
+.certContents {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
 .certRow {
   display: flex;
   align-items: flex-start;
@@ -218,6 +224,10 @@ h6 {
     height: auto;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .certContents {
+    display: none;
   }
 
   .skills {
