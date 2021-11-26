@@ -1,7 +1,6 @@
-/*@import "https://fonts.googleapis.com/css?family=Lobster+Two|Comfortaa:wght@300|Raleway:wght@200";*/
-
+/* ANimations  */
 body {
-  background-image: linear-gradient(
+  background: linear-gradient(
     34deg,
     #34a798,
     #229389,
@@ -9,77 +8,46 @@ body {
     #007475,
     #005660
   );
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+
   border-radius: 0px;
-  background-size: 100% 100%;
-
-  -webkit-animation: Animation 5s ease infinite;
-  -moz-animation: Animation 5s ease infinite;
 }
 
-/* Fonts */
-
-@font-face {
-  font-family: lobster;
-  src: url("../fonts/LobsterTwo-Regular.ttf");
-}
-
-@font-face {
-  font-family: raleway;
-  src: url("../fonts/Raleway-Bold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: raleway;
-  src: url("../fonts/Raleway-Regular.ttf");
-}
-
-@font-face {
-  font-family: baloo2;
-  src: url("../fonts/Baloo2-Bold.ttf");
-}
-
-@font-face {
-  font-family: major;
-  src: url("../fonts/MajorMonoDisplay-Regular.ttf");
-}
-
-@font-face {
-  font-family: didact;
-  src: url("../fonts/DidactGothic-Regular.ttf");
-}
-
-@-webkit-keyframes Animation {
+@-webkit-keyframes AnimationName {
   0% {
-    background-position: 10% 0%;
+    background-position: 0% 51%;
   }
   50% {
-    background-position: 91% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 10% 0%;
+    background-position: 0% 51%;
   }
 }
-@-moz-keyframes Animation {
+@-moz-keyframes AnimationName {
   0% {
-    background-position: 10% 0%;
+    background-position: 0% 51%;
   }
   50% {
-    background-position: 91% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 10% 0%;
+    background-position: 0% 51%;
   }
 }
-@keyframes Animation {
+@keyframes AnimationName {
   0% {
-    background-position: 10% 0%;
+    background-position: 0% 51%;
   }
   50% {
-    background-position: 91% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 10% 0%;
+    background-position: 0% 51%;
   }
 }
 
@@ -88,110 +56,6 @@ body {
 }
 ::-moz-selection {
   background: #3c3c3c; /* Gecko Browsers */
-}
-
-section {
-  display: block;
-  position: absolute;
-}
-
-.wrapper {
-  display: block;
-  position: absolute;
-  overflow-y: auto;
-  overflow-x: hidden;
-  top: 5%;
-  bottom: 5%;
-  width: 85%;
-  height: 85%;
-}
-
-#information {
-  left: 25%;
-  top: 10%;
-  width: 60%;
-  height: 80%;
-  word-wrap: break-word;
-}
-
-#coming {
-  background-image: none;
-  /*visibility: hidden;*/
-  display: flex;
-}
-
-#photo {
-  background-image: url("../images/photo.png");
-  background-size: contain;
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background-repeat: no-repeat;
-  left: -120px;
-  top: -150px;
-}
-
-#frameBorder {
-  border: 10px white solid;
-  left: 10px;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  position: absolute;
-}
-
-#sm_links {
-  right: 5%;
-  top: 5%;
-  align-items: right;
-  flex-flow: column;
-  display: flex;
-  justify-content: right;
-}
-
-.sm_button {
-  margin-top: 10px;
-  height: 60px;
-  width: 60px;
-  background-size: 60px 60px;
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.sprt-btn-container .spriteButton :not(:last-child) {
-  border-right: none;
-}
-
-.spriteButton {
-  height: 81px;
-  width: 180px;
-
-  display: inline-block;
-  background-position: top;
-  margin-top: 0;
-
-  -webkit-font-smoothing: antialiased;
-}
-
-.spriteButton:hover {
-  background-position: bottom;
-}
-
-a {
-  font-family: "raleway";
-  font-size: 22px;
-  color: #fff3f1;
-  color: #ffdb58;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-img {
-  border: 0;
 }
 
 .delayedAppearance {
@@ -212,95 +76,6 @@ img {
   animation-timing-function: ease-out;
   animation-duration: 0.8s;
   animation-delay: 0s;
-}
-
-h1 {
-  font-family: "lobster";
-  font-size: 50px;
-  font-weight: 200;
-  color: #ffffff;
-  letter-spacing: 1.9px;
-}
-
-h2 {
-  font-family: "major";
-  font-size: 24px;
-  font-weight: 200;
-  color: #ffffff;
-  letter-spacing: -1px;
-}
-
-h3 {
-  font-family: "raleway";
-  font-size: 22px;
-  font-weight: 400;
-  text-align: justify;
-  color: #fff3f1;
-  line-height: 26px;
-  word-wrap: normal;
-}
-
-hr {
-  background-color: white;
-  display: block;
-  margin: -40px 00px 50px;
-  height: 3px;
-  width: 160px;
-  border: none;
-}
-
-#greek-text {
-  font-family: "didact";
-  font-weight: 200;
-  font-size: 22px;
-}
-
-#l_icon {
-  background-image: url("../images/l.png");
-}
-
-#rg_icon {
-  background-image: url("../images/rg.png");
-}
-
-#contact_icon {
-  background-image: url("../images/contact.png");
-}
-
-#gh_icon {
-  background-image: url("../images/gh.png");
-}
-
-#orcid_icon {
-  background-image: url("../images/orcid.png");
-}
-
-#in_icon {
-  background-image: url("../images/in.png");
-}
-
-#return_icon {
-  background-image: url("../images/return_nohover.png");
-}
-
-#dl_icon {
-  background-image: url("../images/download.png");
-}
-
-#wp_icon {
-  background-image: url("../images/wp.png");
-}
-
-#obilab_icon {
-  background-image: url("../images/obilab.png");
-}
-
-#cv_icon {
-  background-image: url("../images/cv.png");
-}
-
-#pub_icon {
-  background-image: url("../images/pub.png");
 }
 
 @-moz-keyframes pageLoad {
@@ -368,6 +143,239 @@ hr {
   }
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: lobster;
+  src: url("../fonts/LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: baloo2;
+  src: url("../fonts/Baloo2-Bold.ttf");
+}
+
+@font-face {
+  font-family: major;
+  src: url("../fonts/MajorMonoDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: didact;
+  src: url("../fonts/DidactGothic-Regular.ttf");
+}
+
+/* Sections */
+
+section {
+  display: block;
+  position: absolute;
+}
+
+.wrapper {
+  display: block;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 5%;
+  bottom: 5%;
+  width: 85%;
+  height: 85%;
+}
+
+#information {
+  left: 25%;
+  top: 10%;
+  width: 60%;
+  height: 80%;
+  word-wrap: break-word;
+}
+
+#coming {
+  background-image: none;
+  display: flex;
+}
+
+#photo {
+  background-image: url("../images/photo.png");
+  background-size: contain;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  left: -120px;
+  top: -150px;
+}
+
+#frameBorder {
+  border: 10px white solid;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+}
+
+img {
+  border: 0;
+}
+
+/* Buttons */
+#sm_links {
+  right: 5%;
+  top: 5%;
+  align-items: right;
+  flex-flow: column;
+  display: flex;
+  justify-content: right;
+}
+
+.sm_button {
+  margin-top: 10px;
+  height: 60px;
+  width: 60px;
+  background-size: 60px 60px;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sprt-btn-container .spriteButton :not(:last-child) {
+  border-right: none;
+}
+
+.spriteButton {
+  height: 81px;
+  width: 180px;
+
+  display: inline-block;
+  background-position: top;
+  margin-top: 0;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.spriteButton:hover {
+  background-position: bottom;
+}
+#l_icon {
+  background-image: url("../images/l.png");
+}
+
+#rg_icon {
+  background-image: url("../images/rg.png");
+}
+
+#contact_icon {
+  background-image: url("../images/contact.png");
+}
+
+#gh_icon {
+  background-image: url("../images/gh.png");
+}
+
+#orcid_icon {
+  background-image: url("../images/orcid.png");
+}
+
+#in_icon {
+  background-image: url("../images/in.png");
+}
+
+#return_icon {
+  background-image: url("../images/return_nohover.png");
+}
+
+#dl_icon {
+  background-image: url("../images/download.png");
+}
+
+#wp_icon {
+  background-image: url("../images/wp.png");
+}
+
+#obilab_icon {
+  background-image: url("../images/obilab.png");
+}
+
+#cv_icon {
+  background-image: url("../images/cv.png");
+}
+
+#pub_icon {
+  background-image: url("../images/pub.png");
+}
+
+#menu_icon {
+  background-image: url("../images/hamburger.png");
+}
+
+/* Text format */
+a {
+  font-family: "raleway";
+  font-size: 22px;
+  color: #fff3f1;
+  color: #ffdb58;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "lobster";
+  font-size: 50px;
+  font-weight: 200;
+  color: #ffffff;
+  letter-spacing: 1.9px;
+}
+
+h2 {
+  font-family: "major";
+  font-size: 24px;
+  font-weight: 200;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-family: "raleway";
+  font-size: 22px;
+  font-weight: 400;
+  text-align: justify;
+  color: #fff3f1;
+  line-height: 26px;
+  word-wrap: normal;
+}
+
+hr {
+  background-color: white;
+  display: block;
+  margin: -40px 00px 50px;
+  height: 3px;
+  width: 160px;
+  border: none;
+}
+
+#greek-text {
+  font-family: "didact";
+  font-weight: 200;
+  font-size: 22px;
+}
+
+/* Mobile layers */
 .overlay {
   height: 100%;
   width: 0;
@@ -405,10 +413,6 @@ hr {
   position: absolute;
 }
 
-#menu_icon {
-  background-image: url("../images/hamburger.png");
-}
-
 .hideInMobile {
   display: flex;
 }
@@ -420,10 +424,31 @@ hr {
 }
 
 @media screen and (max-width: 812px) {
+  /* Sections */
+  #frameBorder {
+    display: none;
+  }
+
+  #information {
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+  }
+
+  #photo {
+    opacity: 0.8;
+    width: 100%;
+    left: -20%;
+    top: -20%;
+  }
+
+  /* Formatting */
   h3 {
     text-align: left;
   }
 
+  /* Mobile layers */
   .overlay a {
     font-size: 30px;
   }
@@ -443,16 +468,8 @@ hr {
     background-size: 60px 60px;
   }
 
-  #frameBorder {
-    display: none;
-  }
-
   #mobileNav {
     display: block;
-  }
-
-  #menu_icon {
-    display: flex;
   }
 
   .overlay-content {
@@ -463,17 +480,9 @@ hr {
     right: 10%;
   }
 
-  #information {
-    top: 5%;
-    left: 10%;
-    width: 80%;
-    height: 90%;
-  }
+  /* Buttons */
 
-  #photo {
-    opacity: 0.8;
-    width: 100%;
-    left: -20%;
-    top: -20%;
+  #menu_icon {
+    display: flex;
   }
 }
