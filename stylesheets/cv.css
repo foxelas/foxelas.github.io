@@ -188,6 +188,14 @@ h5 {
   letter-spacing: -0.02px;
 }
 
+.languageMargin > singleDescription {
+  flex: 30%;
+}
+
+.languageMargin > .singleType {
+  flex: 70%;
+}
+
 .pinkSubheader {
   color: #e4859f; /* #D61D4F; pink */
   height: 24px;
@@ -201,6 +209,10 @@ h5 {
 .stats {
   width: 60%;
   margin-top: 20px;
+}
+
+.blockInPc {
+  display: none;
 }
 
 @media screen and (max-width: 812px) {
@@ -226,6 +238,10 @@ h5 {
   .certContents {
     display: none;
     width: 100%;
+  }
+
+  .blockInPc {
+    display: block;
   }
 
   .skills {
