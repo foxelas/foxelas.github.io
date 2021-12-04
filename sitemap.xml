@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+    <loc>https://foxelas.github.io/</loc>
+    <lastmod>2021-12-01</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/index</loc>
+    <lastmod>2021-12-01</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/cv</loc>
+    <lastmod>2021-12-04</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/publications</loc>
+    <lastmod>2021-12-04</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/contact</loc>
+    <lastmod>2021-12-01</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/blog/</loc>
+    <lastmod>2021-11-11</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/theogonia/</loc>
+    <lastmod>2021-12-01</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/theogonia/gods</loc>
+    <lastmod>2021-11-30</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/theogonia/goddesses</loc>
+    <lastmod>2021-11-30</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/theogonia/godGroups</loc>
+    <lastmod>2021-11-30</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/theogonia/mortalGroups</loc>
+    <lastmod>2021-11-30</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/theogonia/ceremonialEpithets</loc>
+    <lastmod>2021-11-30</lastmod>
+</url>
+<url>
+    <loc>https://foxelas.github.io/theogonia/romanEquivalents</loc>
+    <lastmod>2021-11-30</lastmod>
+</url>
+</urlset>
