@@ -22,10 +22,20 @@
   </head>
 
   <body>
-    <div>
-    <iframe title =”PDF” src=scripts/pdfjs-2.8.335-dist/web/viewer.html?file=_files/currentResearch.pdf width=”100%” height=”700px”> 
-    </iframe>
-    </div>
+    <object
+      data="scripts/pdfjs-2.8.335-dist/web/viewer.html?file=/_files/currentResearch.pdf"
+      type="application/pdf"
+      width="100%"
+      height="678px"
+    >
+      <iframe
+        src="scripts/pdfjs-2.8.335-dist/web/viewer.html?file=/_files/currentResearch.pdf"
+        width="100%"
+        height="678px"
+      >
+        <p>This browser does not support PDF!</p>
+      </iframe>
+    </object>
 
     <section id="sm_links">
       <div id="mobileNav" class="overlay">
