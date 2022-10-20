@@ -196,8 +196,8 @@ h5 {
   flex: 70%;
 }
 
-.pinkSubheader {
-  color: #e4859f; /* #D61D4F; pink */
+.leftSubheader {
+  color: #ffffff; /* #e4859f; #D61D4F; pink */
   height: 24px;
   margin-bottom: -20px;
 }
