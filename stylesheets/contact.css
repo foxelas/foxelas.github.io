@@ -16,6 +16,14 @@ textarea {
   line-height: 20px;
 }
 
+h4 {
+  font-family: "Raleway";
+  font-size: 16px;
+  letter-spacing: -0.02px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
 textarea {
   height: 100px;
   font-family: "Raleway", sans-serif;
